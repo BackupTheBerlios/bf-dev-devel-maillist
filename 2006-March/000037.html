@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Bf-dev-devel] Feinkonzept
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/bf-dev-devel/2006-March/index.html" >
+   <LINK REL="made" HREF="mailto:bf-dev-devel%40lists.berlios.de?Subject=Re%3A%20%5BBf-dev-devel%5D%20Feinkonzept&In-Reply-To=%3C440A3B26.7070608%40inode.at%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000033.html">
+   <LINK REL="Next"  HREF="000038.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Bf-dev-devel] Feinkonzept</H1>
+    <B>Daniel Posch</B> 
+    <A HREF="mailto:bf-dev-devel%40lists.berlios.de?Subject=Re%3A%20%5BBf-dev-devel%5D%20Feinkonzept&In-Reply-To=%3C440A3B26.7070608%40inode.at%3E"
+       TITLE="[Bf-dev-devel] Feinkonzept">d.posch at inode.at
+       </A><BR>
+    <I>Sun Mar  5 02:13:10 CET 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000033.html">[Bf-dev-devel] Feinkonzept
+</A></li>
+        <LI>Next message: <A HREF="000038.html">[Bf-dev-devel] Feinkonzept
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#37">[ date ]</a>
+              <a href="thread.html#37">[ thread ]</a>
+              <a href="subject.html#37">[ subject ]</a>
+              <a href="author.html#37">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Wolfgang Moser wrote:
+&gt;<i> Ja, ich hab sie beschrieben, nur ist die Beschreibung sehr, sehr grob.
+</I>&gt;<i> Einzelne Buttons die zb der Debugging Tabelle vorangestellt oder
+</I>&gt;<i> nachgestellt werden um sie oder ihre Einstellungen zu ver&#228;ndern wurden
+</I>&gt;<i> nicht erl&#228;utert.
+</I>Es sind keine Buttons oder &#228;hnliches zu machen, nur eine Tabelle f&#252;r den
+Debugger und ein (nicht editierbares) Textfeld f&#252;r den Compiler.
+S&#228;mtliche Einstellungen sollen &#252;ber &quot;Settings&quot; erreichbar sein
+(/trunk/src/settings.ui). Den Settings Dialog mache ich, einfach aus dem
+Grund, weil ich selber noch nicht wei&#223;, was alles reinkommt. Es bleibt
+f&#252;r das Main Window nur die Frage ob der Debugger (also, die Tabelle) im
+linken Bereich platziert wird oder doch lieber im unteren Bereich als
+Tab (so wie der Compiler). Letzteres scheint mir doch sympatischer, so
+wird es auch bei gro&#223;en Entwicklungsumgebungen gemacht. Sollte es so
+gemacht werden, hier die Aufteilung, von oben nach unten:
+
+ * Titelleiste
+ * Men&#252;leiste
+ * Toolbar
+ * Child Windows mit TextArea (im Designer nicht zu ber&#252;cksichtigen; das
+ist IMO gar nicht m&#246;glich)
+ * Tabbar mit zwei Tabs:
+	- Compiler: Beinhaltet eine nicht editierbare TextArea
+	- Debugger: Beinhaltet eine Tabelle, die wir halt irgendwie erweitern
+k&#246;nnen m&#252;ssen
+ * Statusbar
+
+Das ist IMO alles. Fehlt was?
+
+&gt;<i> Da du wie mir scheint nicht sehr gewillt bist, mehr Infos dar&#252;ber
+</I>&gt;<i> herauszur&#252;cken, werde ich versuchen ein primitives Groblayout zu machen
+</I>&gt;<i> und dann &#252;ber SVN bereitstellen. Danach erwarte ich mir ein Feedback.
+</I>Nat&#252;rlich bin ich gewillt dir Informationen zu geben, aber ich tu mir
+etwas schwer zu erraten was genau dir nicht klar ist. Aber deine
+Einstellung gef&#228;llt mir sehr gut, du tust wenigstens das was innerhalb
+deiner M&#246;glichkeiten liegt. So gro&#223; ist das Main Window nicht und wie
+gesagt, ich stehe gerne f&#252;r Fragen bereit; du musst nur genau fragen,
+dass ich auch genau antworten kann.
+
+- ---
+Daniel Posch
+Brainfuck Studio Project Leader
+<A HREF="https://lists.berlios.de/mailman/listinfo/bf-dev-devel">d.posch at inode.at</A>
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.2 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - <A HREF="http://enigmail.mozdev.org">http://enigmail.mozdev.org</A>
+
+iD8DBQFECjslJUJZxetoOPARAs4gAKCHfmX+MtfEhKbXn/YXO/stPFJGcwCffYdK
+pbg+/WFi39zXgla3Ro46mxs=
+=ya0p
+-----END PGP SIGNATURE-----
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000033.html">[Bf-dev-devel] Feinkonzept
+</A></li>
+	<LI>Next message: <A HREF="000038.html">[Bf-dev-devel] Feinkonzept
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#37">[ date ]</a>
+              <a href="thread.html#37">[ thread ]</a>
+              <a href="subject.html#37">[ subject ]</a>
+              <a href="author.html#37">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/bf-dev-devel">More information about the Bf-dev-devel
+mailing list</a><br>
+</body></html>

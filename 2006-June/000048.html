@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Bf-dev-devel] Error-Konzept von Posch. Eine kurze Beschreibung.
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/bf-dev-devel/2006-June/index.html" >
+   <LINK REL="made" HREF="mailto:bf-dev-devel%40lists.berlios.de?Subject=Re%3A%20%5BBf-dev-devel%5D%20Error-Konzept%20von%20Posch.%20Eine%20kurze%20Beschreibung.&In-Reply-To=%3C44845691.9040805%40googlemail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Bf-dev-devel] Error-Konzept von Posch. Eine kurze Beschreibung.</H1>
+    <B>David Christa</B> 
+    <A HREF="mailto:bf-dev-devel%40lists.berlios.de?Subject=Re%3A%20%5BBf-dev-devel%5D%20Error-Konzept%20von%20Posch.%20Eine%20kurze%20Beschreibung.&In-Reply-To=%3C44845691.9040805%40googlemail.com%3E"
+       TITLE="[Bf-dev-devel] Error-Konzept von Posch. Eine kurze Beschreibung.">davidchrista at gmail.com
+       </A><BR>
+    <I>Mon Jun  5 18:06:41 CEST 2006</I>
+    <P><UL>
+        
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#48">[ date ]</a>
+              <a href="thread.html#48">[ thread ]</a>
+              <a href="subject.html#48">[ subject ]</a>
+              <a href="author.html#48">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Teammitglieder, h&#246;rt mich an!
+
+Da unser Projektleiter zur Zeit nicht gut zu erreichen ist, ich aber 
+trotzdem m&#246;chte, dass ihr auch erf&#228;hrt, was er so vollbringt, dachte ich 
+mir, ich schreibe euch mal eine Beschreibung seines genialen 
+Error-Konzeptes.
+
+Also. Als erstes w&#228;re da eine Klasse, sie hei&#223;t Error_Base, welche 
+scheinbar eine Basisklasse f&#252;r alle Arten von Fehlern darstellen soll.
+Als n&#228;chstes gibt es eine Klasse InvalidCode. Sie ist von Error_Base 
+abgeleitet und ist somit ein spezieller Fehlertyp, n&#228;mlich der f&#252;r einen 
+Fehler im Brainfuck-Code. Diese Klasse ist es im &#220;brigen auch die, die 
+geworfen wird, wenn Fehler vorhanden sind.
+Weiters ist die Klasse InvalidCodeList zu nennen. Diese Klasse ist von 
+std::vector&lt;std::string&gt; abgeleitet. Sie hat eine Integer-Membervariable 
+currIndex und zwei Zugriffsfunktionen. Erstens bool next(), sozusagen, 
+um currIndex zu erh&#246;hen, und char *what(), um den aktuellen Fehler 
+abzurufen. Von den einzelnen Fehlern wird nur ein string gespeichert, 
+sozusagen die Fehlermeldung, und diese wird nochdazu an einem Ort 
+gespeichert, der f&#252;r die Klasse, die die Fehler speichert, auf direktem 
+Weg gar nicht zug&#228;nglich ist, n&#228;mlich in einem Member der Basisklasse.
+Zur&#252;ck zu InvalidCode: In InvalidCode wird ein Objekt von eben dieser 
+Klasse, InvalidCodeList, angelegt. Weiters hat InvalidCode drei 
+Zugriffsfunktionen: char *what(), zum Abrufen aller Fehlerstrings aus 
+InvalidCodeList, InvalidCodeList &amp;getList(), zum Abrufen der ganzen 
+Liste und int getNumberOfListElements(). Man beachte, dass es weder in 
+dieser Klasse, noch in InvalidCodeList eine Methode zum komfortablen 
+Einf&#252;gen eines Fehlers gibt. Stattdessen muss man den Umweg &#252;ber 
+getList() und push_back() gehen, was leider jedoch unm&#246;glich ist, da 
+getList(), vern&#252;nftigerweise, const deklariert wurde. Es bleibt also 
+nichts anderes &#252;brig, als den const-Modifikator zu entfernen, und wie 
+erw&#228;hnt vorzugehen, auch wenn diese Methodik alles andere als sicher und 
+unproblematisch ist.
+Wie schon erw&#228;ht, wird nur ein string f&#252;r jeden Fehler gespeichert. Das 
+ist insofern problematisch, da es scheinbar nur eine Klasse gibt, die 
+Fehler im Brainfuck-Code darstellt, n&#228;mlich InvalidCode. Ich 
+spekulierte, ob InvalidCode vielleicht als Basisklasse f&#252;r spezielle 
+Brainfuck-Code-Fehler gedacht w&#228;re. Stellte jedoch fest, dass das 
+unm&#246;glich ist, weil dann die Listen jedes Fehlertyps in einem eigenen 
+Objekt gespeichert werden w&#252;rden, und somit mehrere Objekte als 
+Exceptions geworfen werden m&#252;ssten, dies jedoch unm&#246;glich. Somit ist 
+InvalidCode tats&#228;chlich die einzige Klasse f&#252;r Brainfuck-Code-Fehler.
+
+Das war mein kurzer Einblick in das Fehler-Konzept von unserem 
+Projektleiter. An dieser Stelle muss ich leider zugeben, dass ich dieses 
+Konzept absolut nicht verstanden habe, da ich es auch nach langer Arbeit 
+nicht geschafft habe, das Fehler-Konzept so in mein Programm einzubauen, 
+dass es Funktioniert. Offensichtlich ist dieses Konzept zu hoch f&#252;r mich.
+
+David Christa
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#48">[ date ]</a>
+              <a href="thread.html#48">[ thread ]</a>
+              <a href="subject.html#48">[ subject ]</a>
+              <a href="author.html#48">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/bf-dev-devel">More information about the Bf-dev-devel
+mailing list</a><br>
+</body></html>

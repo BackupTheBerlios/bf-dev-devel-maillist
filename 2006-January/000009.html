@@ -1,0 +1,162 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Bf-dev-devel] Vom Qt-Designer zum C++-Programm
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/bf-dev-devel/2006-January/index.html" >
+   <LINK REL="made" HREF="mailto:bf-dev-devel%40lists.berlios.de?Subject=Re%3A%20%5BBf-dev-devel%5D%20Vom%20Qt-Designer%20zum%20C%2B%2B-Programm&In-Reply-To=%3C43BC1420.9040407%40gmx.at%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Bf-dev-devel] Vom Qt-Designer zum C++-Programm</H1>
+    <B>Bernhard Kragl</B> 
+    <A HREF="mailto:bf-dev-devel%40lists.berlios.de?Subject=Re%3A%20%5BBf-dev-devel%5D%20Vom%20Qt-Designer%20zum%20C%2B%2B-Programm&In-Reply-To=%3C43BC1420.9040407%40gmx.at%3E"
+       TITLE="[Bf-dev-devel] Vom Qt-Designer zum C++-Programm">boern at gmx.at
+       </A><BR>
+    <I>Wed Jan  4 19:29:52 CET 2006</I>
+    <P><UL>
+        
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#9">[ date ]</a>
+              <a href="thread.html#9">[ thread ]</a>
+              <a href="subject.html#9">[ subject ]</a>
+              <a href="author.html#9">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Daniel Posch wrote:
+
+&gt;<i> Ich nehme mal an, dass der Designer bzw. der Compiler das 
+</I>&gt;<i> Implementieren nicht &#252;bernimmt. Wie sieht's denn mit Signal/Slots etc. 
+</I>&gt;<i> aus - wird das ordnungsgem&#228;&#223; beachtet?
+</I>
+Normalerweise m&#252;sste der uic auch das Implementieren &#252;bernehmen.
+Weilt was mich jetzt aber schon zeimlich anfickt, de schei&#223;e zwischen 
+Qt3 und Qt4. Bei mir hod es beides Installiert. Don hob i 3 uic: uic, 
+uic3, uic-qt4.
+Don is jede schei&#223; beschreibung im net f&#252;r Qt3.
+
+Oba jetzt zum Implementieren.
+Des unten is de man-Page vom uic-qt4. Do gibts a eigene Option -impl. Do 
+hob i a im net geschaud wie des andere mochn, nur irgendwie funktioniert 
+des bei mir ned.
+
+NAME
+       uic - Qt user interface compiler
+
+SYNOPSIS
+       uic [options] file
+
+DESCRIPTION
+       This page documents the User Interface Compiler for the Qt GUI toolkit.
+       The uic reads a user interface definition (.ui) file in XML  as  gener-
+       ated  by  Qt  Designer  and  creates corresponding C++ header or source
+       files. It also generates an image file that embeds raw  image  data  in
+       C++ source code.
+
+
+       Generate declaration:
+            uic  [options]  &lt;file&gt;
+
+       Generate implementation:
+            uic  [options] -impl &lt;headerfile&gt; &lt;file&gt;
+               &lt;headerfile&gt;:    name of the declaration file
+
+       Generate image collection:
+            uic  [options] -embed &lt;project&gt; &lt;image1&gt; &lt;image2&gt; &lt;image3&gt; ...
+               &lt;project&gt;:       project name
+               &lt;image[1..n]&gt;:   image files
+
+
+       For  convenience,  uic  can also generate declaration or implementation
+       stubs for subclasses.
+
+       Generate subclass declaration:
+            uic   [options]  -subdecl   &lt;subclassname&gt;   &lt;baseclassheaderfile&gt;
+       &lt;file&gt;
+               &lt;subclassname&gt;:     name of the subclass to generate
+               &lt;baseclassheaderfile&gt;:    declaration file of the baseclass
+
+       Generate subclass implementation:
+            uic  [options] -subimpl &lt;subclassname&gt; &lt;subclassheaderfile&gt; &lt;file&gt;
+               &lt;subclassname&gt;:     name of the subclass to generate
+               &lt;subclassheaderfile&gt;:    declaration file of the subclass
+
+
+GENERAL OPTIONS
+       -o file
+              Write output to file rather than to stdout.
+
+       -nofwd Omit forward declarations of custom  classes  in  the  generated
+              header file. This is necessary if typedef classes are used.
+
+       -tr func
+              Use func() instead of tr() for internationalization.
+
+       -version
+              Display the version of uic and exit.
+
+
+USAGE
+       uic is almost always invoked by make(1), rather than by hand.
+
+       Here are useful makefile rules if you only use GNU make:
+
+           %.h: %.ui
+                   uic $&lt; -o $@
+           %.cpp: %.ui
+                   uic -impl $*.h $&lt; -o $@
+
+       If you want to write portably, you can use individual rules of the fol-
+       lowing form:
+
+           NAME.h: NAME.ui
+                   uic $&lt; -o $@
+           NAME.cpp: NAME.ui
+                   uic -impl $*.h $&lt; -o $@
+
+       You must also remember to add NAME.cpp to your SOURCES (substitute your
+       favorite name) variable and NAME.o to your OBJECTS variable.
+
+       (While  we  prefer  to  name our C++ source files .cpp, the uic doesn't
+       care, so you can use .C, .cc, .CC, .cxx or even .c++ if you prefer.)
+
+
+SEE ALSO
+       <A HREF="http://www.trolltech.com/">http://www.trolltech.com/</A>
+
+AUTHOR
+       Trolltech AS &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/bf-dev-devel">info at trolltech.com</A>&gt;
+
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#9">[ date ]</a>
+              <a href="thread.html#9">[ thread ]</a>
+              <a href="subject.html#9">[ subject ]</a>
+              <a href="author.html#9">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/bf-dev-devel">More information about the Bf-dev-devel
+mailing list</a><br>
+</body></html>

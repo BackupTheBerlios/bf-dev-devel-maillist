@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Bf-dev-devel] Shared Libraries
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/bf-dev-devel/2005-December/index.html" >
+   <LINK REL="made" HREF="mailto:bf-dev-devel%40lists.berlios.de?Subject=Re%3A%20%5BBf-dev-devel%5D%20Shared%20Libraries&In-Reply-To=%3C439B18A3.1060306%40inode.at%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000005.html">
+   <LINK REL="Next"  HREF="000007.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Bf-dev-devel] Shared Libraries</H1>
+    <B>Daniel Posch</B> 
+    <A HREF="mailto:bf-dev-devel%40lists.berlios.de?Subject=Re%3A%20%5BBf-dev-devel%5D%20Shared%20Libraries&In-Reply-To=%3C439B18A3.1060306%40inode.at%3E"
+       TITLE="[Bf-dev-devel] Shared Libraries">d.posch at inode.at
+       </A><BR>
+    <I>Sat Dec 10 19:04:19 CET 2005</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000005.html">[Bf-dev-devel] Wiki gestartet
+</A></li>
+        <LI>Next message: <A HREF="000007.html">[Bf-dev-devel] Vom Qt-Designer zum C++-Programm
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#6">[ date ]</a>
+              <a href="thread.html#6">[ thread ]</a>
+              <a href="subject.html#6">[ subject ]</a>
+              <a href="author.html#6">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Ich bin mir nicht sicher, ob ich mit euch schon dar&#252;ber gesprochen habe, 
+aber einige Programmteile werden als ``Shared Libraries&quot; implementiert 
+werden. Shared Libraries werden direkt beim Programmstart geladen, und 
+wenn sie richtig installiert ist, ben&#252;tzen alle Programme die sp&#228;ter 
+starten automatisch die neue Version. Der Ansatz von Linux erlaubt 
+au&#223;erdem folgendes:
+
+	*  Updaten der Libraries und Support f&#252;r alte Versionen trotzdem 
+beibehalten
+	* &#220;berschreiben von (Teilen oder einzelnen Funktionen von) Libraries
+	* All das w&#228;hrend die Programme laufen und die Library ben&#252;tzen
+
+Die Teile die auf jeden Fall als Shared Library programmiert werden sind 
+die Brainfuck Parsing Library (BPL) und die Brainfuck Interpreting And 
+Debugging Library (BIDL), da diese je von mehreren Programmkomponenten 
+genutzt werden. Vielleicht k&#246;nnen Teile der GUI auch so realisiert 
+werden, aber das ist noch ungewiss.
+
+Mehr Informationen zu Shared Libraries findet ihr in diesem Howto [1].
+
+Die Steigerung von Shared Libraries w&#228;ren Dynamically Loaded (DL) 
+Libraries, die zu jedem beliebigen Zeitpunkt geladen werden k&#246;nnen. Sie 
+kommen vorwiegend bei Plugins und Modulen vor, wir brauchen sie daher 
+nicht zwingend. Den Umgang mit Shared Libraries muss man auch zuerst mal 
+erlernen.
+
+[1] <A HREF="http://www.tldp.org/HOWTO/Program-Library-HOWTO/">http://www.tldp.org/HOWTO/Program-Library-HOWTO/</A>
+
+-- 
+Daniel Posch
+Brainfuck Studio Project Leader
+<A HREF="https://lists.berlios.de/mailman/listinfo/bf-dev-devel">danpo at users.berlios.de</A>
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000005.html">[Bf-dev-devel] Wiki gestartet
+</A></li>
+	<LI>Next message: <A HREF="000007.html">[Bf-dev-devel] Vom Qt-Designer zum C++-Programm
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#6">[ date ]</a>
+              <a href="thread.html#6">[ thread ]</a>
+              <a href="subject.html#6">[ subject ]</a>
+              <a href="author.html#6">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/bf-dev-devel">More information about the Bf-dev-devel
+mailing list</a><br>
+</body></html>

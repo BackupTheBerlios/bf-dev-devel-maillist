@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Bf-dev-devel] Feinkonzept
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/bf-dev-devel/2006-March/index.html" >
+   <LINK REL="made" HREF="mailto:bf-dev-devel%40lists.berlios.de?Subject=Re%3A%20%5BBf-dev-devel%5D%20Feinkonzept&In-Reply-To=%3C4409D0F7.1070208%40inode.at%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000023.html">
+   <LINK REL="Next"  HREF="000027.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Bf-dev-devel] Feinkonzept</H1>
+    <B>Daniel Posch</B> 
+    <A HREF="mailto:bf-dev-devel%40lists.berlios.de?Subject=Re%3A%20%5BBf-dev-devel%5D%20Feinkonzept&In-Reply-To=%3C4409D0F7.1070208%40inode.at%3E"
+       TITLE="[Bf-dev-devel] Feinkonzept">d.posch at inode.at
+       </A><BR>
+    <I>Sat Mar  4 18:40:07 CET 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000023.html">[Bf-dev-devel] Feinkonzept
+</A></li>
+        <LI>Next message: <A HREF="000027.html">[Bf-dev-devel] Feinkonzept
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#25">[ date ]</a>
+              <a href="thread.html#25">[ thread ]</a>
+              <a href="subject.html#25">[ subject ]</a>
+              <a href="author.html#25">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Wolfgang Moser wrote:
+&gt;<i> Ich hab 0 Ahnung wie ich im designer ein Men&#252; hinbring.
+</I>Das Men&#252; ist in der von mir erstellten Datei /trunk/src/mainwindow.ui
+schon vorhanden! Wenn du im Qt Designer ein neues &quot;Main Window&quot; erzeugst
+(in dem Dialog der am Anfang aufscheint), dann wird automatisch ein Men&#252;
+erzeugt, wo man nur mehr die einzelnen Punkte editieren muss. Aber wie
+gesagt, das Men&#252; ist schon vorhanden; darum hab ich mich schon vor
+Wochen gek&#252;mmert.
+
+&gt;<i> Ich hab so gut wie keine Ahnung von Qt.
+</I>Es ist f&#252;r's erste nicht so wichtig zu wissen, wie die GUI dann
+tats&#228;chlich ausprogrammiert wird. Vorerst ist es nur Ziel, im Qt
+Designer die UI zu erstellen, um anschlie&#223;end die Prototypen f&#252;r ein
+Klassendiagramm zu bekommen.
+
+&gt;<i> Ich hab so gut wie keine Ahnung von der ganzen GUI!
+</I>&gt;<i> 
+</I>&gt;<i> Ja, ich wei&#223;:
+</I>&gt;<i> 
+</I>&gt;<i> - Oben befindet sich das Men&#252; und die Men&#252;leiste
+</I>&gt;<i> - Links befindet sich die Tabelle (oder ev. eine andere Komponente) f&#252;r
+</I>&gt;<i> den Debugger
+</I>&gt;<i> - Unten befindet sich eine Leiste f&#252;r den Compiler-Output; darunter ist
+</I>&gt;<i> eine Statusleiste
+</I>&gt;<i> - Die restliche Fl&#228;che (sprich: der Raum im rechten Bereich) wird f&#252;r
+</I>&gt;<i> die Textarea ben&#252;tzt, in der der Brainfuck-Code editiert wird
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> Aber das hilft mir auch nicht weiter, wenn ich nicht wei&#223; wie ich das
+</I>&gt;<i> ganze machen soll.
+</I>Kannst du bitte etwas konkretere Fragen stellen? Wo kennst du dich nicht
+aus? Im Prinzip musst du ja nur die Komponenten zusammenklicken und bei
+Unsicherheiten gibt's noch immer die Qt Dokumentation.
+
+/trunk/src/mainwindow.ui enth&#228;lt bereits:
+	- Men&#252;(-leiste)
+	- Statusleiste
+
+Folgende Komponenten fehlen:
+	- Debugger/Tabelle (F&#252;r den Unterschied zwischen item-based Table und
+TableViews bitte in der Dokumentation nachsehen)
+	- Compiler-Output (Ein nicht-editierbares Textfeld in einem
+Tabulator-Container)
+
+Das war's. Ich spiele gerade mit dem Gedanken, den Debugger anstatt als
+Tabelle im linken Bereich, unten zu platzieren, also als Tabelle in
+einem Tab. Dann h&#228;tten wir unten zwei Tabs: Compiler, Debugger
+
+Das w&#228;re glaube ich noch &#252;bersichtlicher; was h&#228;lt ihr davon?
+
+&gt;<i> Wenn ich mal ein fertiges Layout h&#228;tte, w&#252;rde ich mich schon leichter tun.
+</I>Ein fertiges *.ui File? Sowas gibt's IMO in der Dokumentation. Oder
+meinst du etwas anderes?
+
+&gt;<i> Aus. Ende.
+</I>&gt;<i> 
+</I>&gt;<i> _______________________________________________
+</I>&gt;<i> Bf-dev-devel mailing list
+</I>&gt;<i> <A HREF="https://lists.berlios.de/mailman/listinfo/bf-dev-devel">Bf-dev-devel at lists.berlios.de</A>
+</I>&gt;<i> <A HREF="http://lists.berlios.de/mailman/listinfo/bf-dev-devel">http://lists.berlios.de/mailman/listinfo/bf-dev-devel</A>
+</I>&gt;<i> 
+</I>
+- ---
+Daniel Posch
+Brainfuck Studio Project Leader
+<A HREF="https://lists.berlios.de/mailman/listinfo/bf-dev-devel">d.posch at inode.at</A>
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.2 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - <A HREF="http://enigmail.mozdev.org">http://enigmail.mozdev.org</A>
+
+iD8DBQFECdD3JUJZxetoOPARAokLAKCRF5GI1EXmzCsPTxIdRw/yUVB/TgCgl0hG
+XMXWi2DdRWjeqfhbnyJMNFg=
+=i0b1
+-----END PGP SIGNATURE-----
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000023.html">[Bf-dev-devel] Feinkonzept
+</A></li>
+	<LI>Next message: <A HREF="000027.html">[Bf-dev-devel] Feinkonzept
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#25">[ date ]</a>
+              <a href="thread.html#25">[ thread ]</a>
+              <a href="subject.html#25">[ subject ]</a>
+              <a href="author.html#25">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/bf-dev-devel">More information about the Bf-dev-devel
+mailing list</a><br>
+</body></html>

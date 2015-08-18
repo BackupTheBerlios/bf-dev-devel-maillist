@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Bf-dev-devel] Vom Qt-Designer zum C++-Programm
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/bf-dev-devel/2005-December/index.html" >
+   <LINK REL="made" HREF="mailto:bf-dev-devel%40lists.berlios.de?Subject=Re%3A%20%5BBf-dev-devel%5D%20Vom%20Qt-Designer%20zum%20C%2B%2B-Programm&In-Reply-To=%3C43ADD63C.5090609%40gmx.at%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000006.html">
+   <LINK REL="Next"  HREF="000008.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Bf-dev-devel] Vom Qt-Designer zum C++-Programm</H1>
+    <B>Bernhard Kragl</B> 
+    <A HREF="mailto:bf-dev-devel%40lists.berlios.de?Subject=Re%3A%20%5BBf-dev-devel%5D%20Vom%20Qt-Designer%20zum%20C%2B%2B-Programm&In-Reply-To=%3C43ADD63C.5090609%40gmx.at%3E"
+       TITLE="[Bf-dev-devel] Vom Qt-Designer zum C++-Programm">boern at gmx.at
+       </A><BR>
+    <I>Sun Dec 25 00:14:04 CET 2005</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000006.html">[Bf-dev-devel] Shared Libraries
+</A></li>
+        <LI>Next message: <A HREF="000008.html">[Bf-dev-devel] Vom Qt-Designer zum C++-Programm
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#7">[ date ]</a>
+              <a href="thread.html#7">[ thread ]</a>
+              <a href="subject.html#7">[ subject ]</a>
+              <a href="author.html#7">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Ich gr&#252;&#223;e euch!
+Hab mich mit unseren Mailinglists noch nicht auseinander gesetzt und 
+hoff jetzt einfach mal, dass dies die richtige ist.
+
+Also. Ich hab mich jetzt schon ein bisschen mit Qt und dem Qt-Designer 
+auseinandergesetzt.
+Der grunds&#228;tzliche Vorgang vom zusammengeklickten Window im Qt-Designer 
+sollte so aussehen:
+
+    * Mit dem &quot;Compiler&quot; uic kann man die XML-Beschreibung des Windows
+      in einer vom Qt-Designer erzeugten *.ui-Datei
+      in einen Headerfile umwandeln.
+    * Wie man diesen dann in einer *.cpp-Datei verwendet, wei&#223; ich
+      leider noch nicht.
+    * Falls man dann ein fertiges C++-Programm hat, sieht das
+      Compilieren so aus:
+          o qmake -project &lt;*.cpp&gt;
+          o qmake
+          o make
+    * Nun ist eine ausf&#252;hrbare Datei vorhanden.
+
+Naja, ich hoffe, dieses Mail ersparrt euch lange Manual- bzw. 
+Internetrecherchen.
+
+Noch ein kleiner Tipp: Da schon bei einem kleinen Programm viele Dateien 
+(*.ui, *.pro, *.cpp, Makefile, usw.) anfallen,
+    erstellt ihr euch am besten f&#252;r jedes Projekt einen eigenen Ordner.
+
+lg
+Bernhard
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000006.html">[Bf-dev-devel] Shared Libraries
+</A></li>
+	<LI>Next message: <A HREF="000008.html">[Bf-dev-devel] Vom Qt-Designer zum C++-Programm
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#7">[ date ]</a>
+              <a href="thread.html#7">[ thread ]</a>
+              <a href="subject.html#7">[ subject ]</a>
+              <a href="author.html#7">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/bf-dev-devel">More information about the Bf-dev-devel
+mailing list</a><br>
+</body></html>

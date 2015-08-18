@@ -1,0 +1,58 @@
+From davidchrista at gmail.com  Mon Jun  5 18:06:41 2006
+From: davidchrista at gmail.com (David Christa)
+Date: Mon, 05 Jun 2006 18:06:41 +0200
+Subject: [Bf-dev-devel] Error-Konzept von Posch. Eine kurze Beschreibung.
+Message-ID: <44845691.9040805@googlemail.com>
+
+Teammitglieder, h?rt mich an!
+
+Da unser Projektleiter zur Zeit nicht gut zu erreichen ist, ich aber 
+trotzdem m?chte, dass ihr auch erf?hrt, was er so vollbringt, dachte ich 
+mir, ich schreibe euch mal eine Beschreibung seines genialen 
+Error-Konzeptes.
+
+Also. Als erstes w?re da eine Klasse, sie hei?t Error_Base, welche 
+scheinbar eine Basisklasse f?r alle Arten von Fehlern darstellen soll.
+Als n?chstes gibt es eine Klasse InvalidCode. Sie ist von Error_Base 
+abgeleitet und ist somit ein spezieller Fehlertyp, n?mlich der f?r einen 
+Fehler im Brainfuck-Code. Diese Klasse ist es im ?brigen auch die, die 
+geworfen wird, wenn Fehler vorhanden sind.
+Weiters ist die Klasse InvalidCodeList zu nennen. Diese Klasse ist von 
+std::vector<std::string> abgeleitet. Sie hat eine Integer-Membervariable 
+currIndex und zwei Zugriffsfunktionen. Erstens bool next(), sozusagen, 
+um currIndex zu erh?hen, und char *what(), um den aktuellen Fehler 
+abzurufen. Von den einzelnen Fehlern wird nur ein string gespeichert, 
+sozusagen die Fehlermeldung, und diese wird nochdazu an einem Ort 
+gespeichert, der f?r die Klasse, die die Fehler speichert, auf direktem 
+Weg gar nicht zug?nglich ist, n?mlich in einem Member der Basisklasse.
+Zur?ck zu InvalidCode: In InvalidCode wird ein Objekt von eben dieser 
+Klasse, InvalidCodeList, angelegt. Weiters hat InvalidCode drei 
+Zugriffsfunktionen: char *what(), zum Abrufen aller Fehlerstrings aus 
+InvalidCodeList, InvalidCodeList &getList(), zum Abrufen der ganzen 
+Liste und int getNumberOfListElements(). Man beachte, dass es weder in 
+dieser Klasse, noch in InvalidCodeList eine Methode zum komfortablen 
+Einf?gen eines Fehlers gibt. Stattdessen muss man den Umweg ?ber 
+getList() und push_back() gehen, was leider jedoch unm?glich ist, da 
+getList(), vern?nftigerweise, const deklariert wurde. Es bleibt also 
+nichts anderes ?brig, als den const-Modifikator zu entfernen, und wie 
+erw?hnt vorzugehen, auch wenn diese Methodik alles andere als sicher und 
+unproblematisch ist.
+Wie schon erw?ht, wird nur ein string f?r jeden Fehler gespeichert. Das 
+ist insofern problematisch, da es scheinbar nur eine Klasse gibt, die 
+Fehler im Brainfuck-Code darstellt, n?mlich InvalidCode. Ich 
+spekulierte, ob InvalidCode vielleicht als Basisklasse f?r spezielle 
+Brainfuck-Code-Fehler gedacht w?re. Stellte jedoch fest, dass das 
+unm?glich ist, weil dann die Listen jedes Fehlertyps in einem eigenen 
+Objekt gespeichert werden w?rden, und somit mehrere Objekte als 
+Exceptions geworfen werden m?ssten, dies jedoch unm?glich. Somit ist 
+InvalidCode tats?chlich die einzige Klasse f?r Brainfuck-Code-Fehler.
+
+Das war mein kurzer Einblick in das Fehler-Konzept von unserem 
+Projektleiter. An dieser Stelle muss ich leider zugeben, dass ich dieses 
+Konzept absolut nicht verstanden habe, da ich es auch nach langer Arbeit 
+nicht geschafft habe, das Fehler-Konzept so in mein Programm einzubauen, 
+dass es Funktioniert. Offensichtlich ist dieses Konzept zu hoch f?r mich.
+
+David Christa
+
+

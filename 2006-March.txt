@@ -1,0 +1,985 @@
+From boern at gmx.at  Wed Mar  1 22:57:32 2006
+From: boern at gmx.at (Bernhard Kragl)
+Date: Wed, 01 Mar 2006 22:57:32 +0100
+Subject: [Bf-dev-devel] kde icons
+Message-ID: <440618CC.6040205@gmx.at>
+
+hi @ all!
+
+hob einfoch moi von meiner kde version de icons herausgesucht, de wir 
+ben?tigen.
+was haltet ihr von denen, bzw. habt ihr bessere??
+
+lg kragl
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: kde.zip
+Type: application/octet-stream
+Size: 19657 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/bf-dev-devel/attachments/20060301/9634976c/attachment.obj>
+
+From d.posch at inode.at  Fri Mar  3 23:56:24 2006
+From: d.posch at inode.at (Daniel Posch)
+Date: Fri, 03 Mar 2006 23:56:24 +0100
+Subject: [Bf-dev-devel] Projektkommunikation
+Message-ID: <4408C998.6000807@inode.at>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Angesichts dessen, dass weder jemand je auf die Idee k?me unser
+SVN-Repository zu update, noch jemand unsere Mailingliste ben?tzt, gibt
+es zwei Annahmen. Entweder kennt ihr euch nicht aus oder es arbeitet
+hier kein Mensch! So wie es im Moment l?uft, kann es nicht weitergehen.
+Unsere gesamte Kommunikation bricht ein und das ist ein echtes Problem.
+
+Ich bitte euch, falls irgendjemand fragen hat, egal ob zu SVN oder den
+Mailinglisten, dann bitte fragt mich sofort!
+
+Es ist unumg?nglich, dass ihr den anderen Teammitgliedern eure
+?nderungen zur Verf?gung stellt; und auch ich kann nur anhand von SVN
+beurteilen wie rasch die Arbeit vorangeht. Bitte n?tzt das -- und wenn's
+noch so ein Furz ist, macht bitte ein 'svn update'!
+
+Die Mailingliste ist zur Projektkommunikation gedacht. Die Sache hat nur
+einen Hacken: Kommunikation basiert auf Gegenseitigkeit und die ist hier
+nicht gegeben. Seht die Mailingliste als eine Art Forum, wo es halt
+anstatt Beitr?gen und Antworten Mails mit einem gewissen Betreff und
+Antworten darauf gibt! Bitte schreibt Antworten auf die Mails und
+verfasst euch selber welche!
+
+Ich sehe mich zu folgender Ma?nahme gezwungen: Jede Arbeit von euch am
+Feinkonzept muss in der Mailingliste dokumentiert werden, d.h. eine Mail
+an bf-dev-devel at lists.berlios.at mit dem Betreff "Re: [bf-dev-devel]
+Feinkonzept" in der ihr eure letzten ?nderungen schreibt.
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.2 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+
+iD8DBQFECMmYJUJZxetoOPARAqEkAJ9m5wMeOgrwzj/PuZfsGm9IfVt7pQCfTeO3
+cnCoN/BUzkA3ZMsQ7kTsUMs=
+=PThh
+-----END PGP SIGNATURE-----
+
+
+From d.posch at inode.at  Sat Mar  4 00:02:33 2006
+From: d.posch at inode.at (Daniel Posch)
+Date: Sat, 04 Mar 2006 00:02:33 +0100
+Subject: [Bf-dev-devel] Projekttagebuch
+Message-ID: <4408CB09.5020405@inode.at>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Ich m?chte euch daran erinnern, dass wir auch ein Projekttagebuch f?hren
+m?ssen und einige Teammitglieder das etwas zu vernachl?ssigen scheinen.
+Der Mangel am Projekttagebuch ist keine Sache die das Projekt direkt
+beeinflusst, aber es wirkt sich auf EUCH und eure Note aus. Also denkt
+das n?chste mal daran.
+
+Tipp: Da ihr ja ab jetzt sowieso die ?nderungen an die Mailingliste
+schicken m?sst, k?nnt ihr zuerst einen Eintrag im Projekttagebuch machen
+und diesen in der Mail anschlie?end verfeinert. Das ist ein Aufwand von
+ungef?hr 5 Minuten; also kein Weltuntergang.
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.2 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+
+iD8DBQFECMsJJUJZxetoOPARAiiSAJ4xV2RTtxjmSZ4XMK6K2NwR8v9rTwCeJpQN
+CFE07zSeTIiMUiZsNfat6bM=
+=YqaG
+-----END PGP SIGNATURE-----
+
+
+From fuzn at gmx.at  Sat Mar  4 15:16:37 2006
+From: fuzn at gmx.at (Wolfgang Moser)
+Date: Sat, 04 Mar 2006 15:16:37 +0100
+Subject: [Bf-dev-devel] Feinkonzept
+In-Reply-To: <43EB6059.8090304@inode.at>
+References: <43E60A7D.6000009@inode.at> <43EB6059.8090304@inode.at>
+Message-ID: <4409A145.4010004@gmx.at>
+
+Ich hab 0 Ahnung wie ich im designer ein Men? hinbring. Ich hab so gut 
+wie keine Ahnung von Qt.
+Ich hab so gut wie keine Ahnung von der ganzen GUI!
+
+Ja, ich wei?:
+
+ - Oben befindet sich das Men? und die Men?leiste
+ - Links befindet sich die Tabelle (oder ev. eine andere Komponente) f?r
+den Debugger
+ - Unten befindet sich eine Leiste f?r den Compiler-Output; darunter ist
+eine Statusleiste
+ - Die restliche Fl?che (sprich: der Raum im rechten Bereich) wird f?r
+die Textarea ben?tzt, in der der Brainfuck-Code editiert wird
+
+
+Aber das hilft mir auch nicht weiter, wenn ich nicht wei? wie ich das 
+ganze machen soll.
+Wenn ich mal ein fertiges Layout h?tte, w?rde ich mich schon leichter tun.
+
+Aus. Ende.
+
+
+
+From fuzn at gmx.at  Sat Mar  4 15:32:50 2006
+From: fuzn at gmx.at (Wolfgang Moser)
+Date: Sat, 04 Mar 2006 15:32:50 +0100
+Subject: [Bf-dev-devel] ICQ?
+Message-ID: <4409A512.4050206@gmx.at>
+
+Warum ist von euch nie jemand im ICQ?
+
+
+From d.posch at inode.at  Sat Mar  4 18:40:07 2006
+From: d.posch at inode.at (Daniel Posch)
+Date: Sat, 04 Mar 2006 18:40:07 +0100
+Subject: [Bf-dev-devel] Feinkonzept
+In-Reply-To: <4409A145.4010004@gmx.at>
+References: <43E60A7D.6000009@inode.at> <43EB6059.8090304@inode.at> <4409A145.4010004@gmx.at>
+Message-ID: <4409D0F7.1070208@inode.at>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Wolfgang Moser wrote:
+> Ich hab 0 Ahnung wie ich im designer ein Men? hinbring.
+Das Men? ist in der von mir erstellten Datei /trunk/src/mainwindow.ui
+schon vorhanden! Wenn du im Qt Designer ein neues "Main Window" erzeugst
+(in dem Dialog der am Anfang aufscheint), dann wird automatisch ein Men?
+erzeugt, wo man nur mehr die einzelnen Punkte editieren muss. Aber wie
+gesagt, das Men? ist schon vorhanden; darum hab ich mich schon vor
+Wochen gek?mmert.
+
+> Ich hab so gut wie keine Ahnung von Qt.
+Es ist f?r's erste nicht so wichtig zu wissen, wie die GUI dann
+tats?chlich ausprogrammiert wird. Vorerst ist es nur Ziel, im Qt
+Designer die UI zu erstellen, um anschlie?end die Prototypen f?r ein
+Klassendiagramm zu bekommen.
+
+> Ich hab so gut wie keine Ahnung von der ganzen GUI!
+> 
+> Ja, ich wei?:
+> 
+> - Oben befindet sich das Men? und die Men?leiste
+> - Links befindet sich die Tabelle (oder ev. eine andere Komponente) f?r
+> den Debugger
+> - Unten befindet sich eine Leiste f?r den Compiler-Output; darunter ist
+> eine Statusleiste
+> - Die restliche Fl?che (sprich: der Raum im rechten Bereich) wird f?r
+> die Textarea ben?tzt, in der der Brainfuck-Code editiert wird
+> 
+> 
+> Aber das hilft mir auch nicht weiter, wenn ich nicht wei? wie ich das
+> ganze machen soll.
+Kannst du bitte etwas konkretere Fragen stellen? Wo kennst du dich nicht
+aus? Im Prinzip musst du ja nur die Komponenten zusammenklicken und bei
+Unsicherheiten gibt's noch immer die Qt Dokumentation.
+
+/trunk/src/mainwindow.ui enth?lt bereits:
+	- Men?(-leiste)
+	- Statusleiste
+
+Folgende Komponenten fehlen:
+	- Debugger/Tabelle (F?r den Unterschied zwischen item-based Table und
+TableViews bitte in der Dokumentation nachsehen)
+	- Compiler-Output (Ein nicht-editierbares Textfeld in einem
+Tabulator-Container)
+
+Das war's. Ich spiele gerade mit dem Gedanken, den Debugger anstatt als
+Tabelle im linken Bereich, unten zu platzieren, also als Tabelle in
+einem Tab. Dann h?tten wir unten zwei Tabs: Compiler, Debugger
+
+Das w?re glaube ich noch ?bersichtlicher; was h?lt ihr davon?
+
+> Wenn ich mal ein fertiges Layout h?tte, w?rde ich mich schon leichter tun.
+Ein fertiges *.ui File? Sowas gibt's IMO in der Dokumentation. Oder
+meinst du etwas anderes?
+
+> Aus. Ende.
+> 
+> _______________________________________________
+> Bf-dev-devel mailing list
+> Bf-dev-devel at lists.berlios.de
+> http://lists.berlios.de/mailman/listinfo/bf-dev-devel
+> 
+
+- ---
+Daniel Posch
+Brainfuck Studio Project Leader
+d.posch at inode.at
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.2 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+
+iD8DBQFECdD3JUJZxetoOPARAokLAKCRF5GI1EXmzCsPTxIdRw/yUVB/TgCgl0hG
+XMXWi2DdRWjeqfhbnyJMNFg=
+=i0b1
+-----END PGP SIGNATURE-----
+
+
+From d.posch at inode.at  Sat Mar  4 18:41:46 2006
+From: d.posch at inode.at (Daniel Posch)
+Date: Sat, 04 Mar 2006 18:41:46 +0100
+Subject: [Bf-dev-devel] ICQ?
+In-Reply-To: <4409A512.4050206@gmx.at>
+References: <4409A512.4050206@gmx.at>
+Message-ID: <4409D15A.7090407@inode.at>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Wolfgang Moser wrote:
+> Warum ist von euch nie jemand im ICQ?
+> _______________________________________________
+> Bf-dev-devel mailing list
+> Bf-dev-devel at lists.berlios.de
+> http://lists.berlios.de/mailman/listinfo/bf-dev-devel
+> 
+
+Ich bin im Prinzip immer im ICQ wenn ich am Computer sitze. Ansonsten
+bin ich jederzeit per Telefon erreichbar.
+
+- ---
+Daniel Posch
+Brainfuck Studio Project Leader
+d.posch at inode.at
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.2 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+
+iD8DBQFECdFaJUJZxetoOPARAmcuAJ9AkCzR4UfketxNDWNZN1RXvOVa4wCfb+lA
+HvpCTE1Xzro5c1VkgAsI2/c=
+=dh8j
+-----END PGP SIGNATURE-----
+
+
+From d.posch at inode.at  Sat Mar  4 18:51:44 2006
+From: d.posch at inode.at (Daniel Posch)
+Date: Sat, 04 Mar 2006 18:51:44 +0100
+Subject: [Bf-dev-devel] Feinkonzept
+In-Reply-To: <4409A145.4010004@gmx.at>
+References: <43E60A7D.6000009@inode.at> <43EB6059.8090304@inode.at> <4409A145.4010004@gmx.at>
+Message-ID: <4409D3B0.1060105@inode.at>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Ach ja, was ich vergessen habe zu sagen:
+
+Die MDI Funktionalit?t wird per Hand gel?st. Als Referenz kann das
+MDI-Beispiel aus der Qt Dokumentation herangezogen werden. Das hei?t
+konkret f?r euch, dass ihr euch um das Textfeld in dem der Code editiert
+wird, nicht k?mmern braucht, sondern nur um die Funktionalit?t, die ich
+im vorherigen Mail aufgez?hlt habe. Das Hinzuf?gen der Klasse, die das
+MDI-Fenster enth?lt, ?bernehme ich!
+
+- ---
+Daniel Posch
+Brainfuck Studio Project Leader
+d.posch at inode.at
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.2 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+
+iD8DBQFECdOwJUJZxetoOPARAu/lAJ9Yl0EZlBNa03UYoHY6MO91Hk8TWACcD+1t
+xs6maWWA5LOAVP3/Ej0UJkM=
+=UWMW
+-----END PGP SIGNATURE-----
+
+
+From d.posch at inode.at  Sat Mar  4 19:00:31 2006
+From: d.posch at inode.at (Daniel Posch)
+Date: Sat, 04 Mar 2006 19:00:31 +0100
+Subject: [Bf-dev-devel] Iconset
+Message-ID: <4409D5BF.7050409@inode.at>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Es bleibt die Frage offen, welches Iconset verwendet werden soll. Alle
+die nicht wissen sollten was ein Iconset ist: Das sind die Icons die
+unter der Men?leiste angezeigt werden.
+
+Ich habe folgende Iconsets zur n?heren Auswahl herangezogen:
+
+(1) CrystalSVG, das Standard-Iconset f?r KDE, das unter
+http://everaldo.com heruntergeladen werden kann.
+
+(2) Die Iconsets aus dem Tango Projekt, siehe http://tango-project.org/
+
+Bitte seht euch die beiden Links an und sagt mir, was euch mehr zuspricht.
+
+- ---
+Daniel Posch
+Brainfuck Studio Project Leader
+d.posch at inode.at
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.2 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+
+iD8DBQFECdW/JUJZxetoOPARAketAKCbxe37+CMonBvNjGoZ2gdhkXWH0gCgjfWq
+/+B3ETs3vq9ISM/QB9apfp8=
+=r6/b
+-----END PGP SIGNATURE-----
+
+
+From d.posch at inode.at  Sat Mar  4 19:44:22 2006
+From: d.posch at inode.at (Daniel Posch)
+Date: Sat, 04 Mar 2006 19:44:22 +0100
+Subject: [Bf-dev-devel] Feinkonzept
+In-Reply-To: <4409D40E.6050508@gmx.at>
+References: <43E60A7D.6000009@inode.at> <43EB6059.8090304@inode.at> <4409A145.4010004@gmx.at> <4409D0F7.1070208@inode.at> <4409D40E.6050508@gmx.at>
+Message-ID: <4409E006.6000400@inode.at>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Wolfgang Moser wrote:
+> Wie siehst mit Icons (Bearbeiten, Einf?gen usw) aus, die unter der
+> Men?leiste sein sollten?
+Siehe Qt Designer Manual, Punkt "Creating Main Window in Qt Designer";
+da steht alles wissenswerte zu Toolbars.
+
+> Wir haben im Grobkonzept eine ganz andere Men?-Hierarchie beschrieben.
+Das Men? war vom David und eigentlich nur dazu da, dass wir ?berhaupt
+eines haben. Aber nachdem ich sowieso schon eines gemacht habe, brauchst
+du dir dar?ber keine Sorgen mehr machen.
+
+> Ich wei? nicht genau, wie deine Vorstellungen von der GUI sind.
+> Der Debugger-Output wird wohl kaum NUR eine Tabelle sein, da werden doch
+> wohl Buttons oder irgendwas noch dabei sein. Ich denk die GUI, so wie
+> sie aussieht, hast nur du im Kopf. Es ist schwer genau zu wissen, was du
+> willst.
+
+
+> Wenn ich ein Main-Window mach, kommt kein Men?.
+Hm, bei mir schon... Aber wie gesagt, es ist schon ein Men? vorhanden in
+/trunk/src/mainwindow.ui!
+
+> Mir kommt der Designer so primitiv vor. Der Qt3-Designer hatte viel mehr
+> M?glichkeiten.
+> Es ist doch unm?glich mit den paar Widgets auszukommen...
+Naja, schon... Keep it short and simple halt. Was fehlt dir am Qt4 Designer?
+
+- ---
+Daniel Posch
+Brainfuck Studio Project Leader
+d.posch at inode.at
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.2 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+
+iD8DBQFECeAGJUJZxetoOPARApn8AJ9g0Zy9gdV0+BKNs54Gr5Six1XVIQCeJb2/
+QQuGXMG4ZIfQEc77WAAjTWg=
+=ocTQ
+-----END PGP SIGNATURE-----
+
+
+From d.posch at inode.at  Sat Mar  4 19:53:28 2006
+From: d.posch at inode.at (Daniel Posch)
+Date: Sat, 04 Mar 2006 19:53:28 +0100
+Subject: [Bf-dev-devel] Feinkonzept
+In-Reply-To: <4409E006.6000400@inode.at>
+References: <43E60A7D.6000009@inode.at> <43EB6059.8090304@inode.at> <4409A145.4010004@gmx.at> <4409D0F7.1070208@inode.at> <4409D40E.6050508@gmx.at> <4409E006.6000400@inode.at>
+Message-ID: <4409E228.7090706@inode.at>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Wolfgang Moser wrote:
+> Ich wei? nicht genau, wie deine Vorstellungen von der GUI sind.
+> Der Debugger-Output wird wohl kaum NUR eine Tabelle sein, da werden doch
+> wohl Buttons oder irgendwas noch dabei sein. Ich denk die GUI, so wie
+> sie aussieht, hast nur du im Kopf. Es ist schwer genau zu wissen, was du
+> willst.
+Nein, das passt schon. Debugger Output soll vorerst nur sein:
+Zellenindex/Zellenwert; und dazu bietet sich halt eine Tabelle an. Hast
+du andere Ideen?
+
+Du hast in deinem letzten Mail die GUI doch beschrieben. Welche Fragen
+bleiben noch offen?
+
+- ---
+Daniel Posch
+Brainfuck Studio Project Leader
+d.posch at inode.at
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.2 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+
+iD8DBQFECeIoJUJZxetoOPARAr2MAJ98XciEGmrHiT7N6lsO4exBYgbrsgCgk3xl
+6IWA4tqQyg42h+rFrvv0Xv0=
+=WoQX
+-----END PGP SIGNATURE-----
+
+
+From fuzn at gmx.at  Sat Mar  4 20:54:51 2006
+From: fuzn at gmx.at (Wolfgang Moser)
+Date: Sat, 04 Mar 2006 20:54:51 +0100
+Subject: [Bf-dev-devel] ICQ?
+In-Reply-To: <4409D15A.7090407@inode.at>
+References: <4409A512.4050206@gmx.at> <4409D15A.7090407@inode.at>
+Message-ID: <4409F08B.2020708@gmx.at>
+
+Ich war heute den ganzen Tag online, niemand au?er mir war da.
+Ich hab dich, Daniel, und David versucht anzurufen. Ohne Erfolg.
+Hiermit bitte ich auch Bernhard seine Telefonnummer preiszugeben, da ich 
+die nicht habe.
+
+
+
+Daniel Posch schrieb:
+
+>-----BEGIN PGP SIGNED MESSAGE-----
+>Hash: SHA1
+>
+>Wolfgang Moser wrote:
+>  
+>
+>>Warum ist von euch nie jemand im ICQ?
+>>_______________________________________________
+>>Bf-dev-devel mailing list
+>>Bf-dev-devel at lists.berlios.de
+>>http://lists.berlios.de/mailman/listinfo/bf-dev-devel
+>>
+>>    
+>>
+>
+>Ich bin im Prinzip immer im ICQ wenn ich am Computer sitze. Ansonsten
+>bin ich jederzeit per Telefon erreichbar.
+>
+>- ---
+>Daniel Posch
+>Brainfuck Studio Project Leader
+>d.posch at inode.at
+>-----BEGIN PGP SIGNATURE-----
+>Version: GnuPG v1.4.2 (GNU/Linux)
+>Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+>
+>iD8DBQFECdFaJUJZxetoOPARAmcuAJ9AkCzR4UfketxNDWNZN1RXvOVa4wCfb+lA
+>HvpCTE1Xzro5c1VkgAsI2/c=
+>=dh8j
+>-----END PGP SIGNATURE-----
+>_______________________________________________
+>Bf-dev-devel mailing list
+>Bf-dev-devel at lists.berlios.de
+>http://lists.berlios.de/mailman/listinfo/bf-dev-devel
+>
+>
+>  
+>
+
+
+
+From fuzn at gmx.at  Sat Mar  4 20:58:00 2006
+From: fuzn at gmx.at (Wolfgang Moser)
+Date: Sat, 04 Mar 2006 20:58:00 +0100
+Subject: [Bf-dev-devel] Iconset
+In-Reply-To: <4409D5BF.7050409@inode.at>
+References: <4409D5BF.7050409@inode.at>
+Message-ID: <4409F148.40904@gmx.at>
+
+Mir pers?nlich gef?llt das Tango Projekt mehr.
+
+Daniel Posch schrieb:
+
+>-----BEGIN PGP SIGNED MESSAGE-----
+>Hash: SHA1
+>
+>Es bleibt die Frage offen, welches Iconset verwendet werden soll. Alle
+>die nicht wissen sollten was ein Iconset ist: Das sind die Icons die
+>unter der Men?leiste angezeigt werden.
+>
+>Ich habe folgende Iconsets zur n?heren Auswahl herangezogen:
+>
+>(1) CrystalSVG, das Standard-Iconset f?r KDE, das unter
+>http://everaldo.com heruntergeladen werden kann.
+>
+>(2) Die Iconsets aus dem Tango Projekt, siehe http://tango-project.org/
+>
+>Bitte seht euch die beiden Links an und sagt mir, was euch mehr zuspricht.
+>
+>- ---
+>Daniel Posch
+>Brainfuck Studio Project Leader
+>d.posch at inode.at
+>-----BEGIN PGP SIGNATURE-----
+>Version: GnuPG v1.4.2 (GNU/Linux)
+>Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+>
+>iD8DBQFECdW/JUJZxetoOPARAketAKCbxe37+CMonBvNjGoZ2gdhkXWH0gCgjfWq
+>/+B3ETs3vq9ISM/QB9apfp8=
+>=r6/b
+>-----END PGP SIGNATURE-----
+>_______________________________________________
+>Bf-dev-devel mailing list
+>Bf-dev-devel at lists.berlios.de
+>http://lists.berlios.de/mailman/listinfo/bf-dev-devel
+>
+>
+>  
+>
+
+
+
+From fuzn at gmx.at  Sat Mar  4 21:02:09 2006
+From: fuzn at gmx.at (Wolfgang Moser)
+Date: Sat, 04 Mar 2006 21:02:09 +0100
+Subject: [Bf-dev-devel] Feinkonzept
+In-Reply-To: <4409E228.7090706@inode.at>
+References: <43E60A7D.6000009@inode.at> <43EB6059.8090304@inode.at> <4409A145.4010004@gmx.at> <4409D0F7.1070208@inode.at> <4409D40E.6050508@gmx.at> <4409E006.6000400@inode.at> <4409E228.7090706@inode.at>
+Message-ID: <4409F241.4030802@gmx.at>
+
+Ja, ich hab sie beschrieben, nur ist die Beschreibung sehr, sehr grob.
+Einzelne Buttons die zb der Debugging Tabelle vorangestellt oder 
+nachgestellt werden um sie oder ihre Einstellungen zu ver?ndern wurden 
+nicht erl?utert.
+Da du wie mir scheint nicht sehr gewillt bist, mehr Infos dar?ber 
+herauszur?cken, werde ich versuchen ein primitives Groblayout zu machen 
+und dann ?ber SVN bereitstellen. Danach erwarte ich mir ein Feedback.
+
+
+Daniel Posch schrieb:
+
+>-----BEGIN PGP SIGNED MESSAGE-----
+>Hash: SHA1
+>
+>Wolfgang Moser wrote:
+>  
+>
+>>Ich wei? nicht genau, wie deine Vorstellungen von der GUI sind.
+>>Der Debugger-Output wird wohl kaum NUR eine Tabelle sein, da werden doch
+>>wohl Buttons oder irgendwas noch dabei sein. Ich denk die GUI, so wie
+>>sie aussieht, hast nur du im Kopf. Es ist schwer genau zu wissen, was du
+>>willst.
+>>    
+>>
+>Nein, das passt schon. Debugger Output soll vorerst nur sein:
+>Zellenindex/Zellenwert; und dazu bietet sich halt eine Tabelle an. Hast
+>du andere Ideen?
+>
+>Du hast in deinem letzten Mail die GUI doch beschrieben. Welche Fragen
+>bleiben noch offen?
+>
+>- ---
+>Daniel Posch
+>Brainfuck Studio Project Leader
+>d.posch at inode.at
+>-----BEGIN PGP SIGNATURE-----
+>Version: GnuPG v1.4.2 (GNU/Linux)
+>Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+>
+>iD8DBQFECeIoJUJZxetoOPARAr2MAJ98XciEGmrHiT7N6lsO4exBYgbrsgCgk3xl
+>6IWA4tqQyg42h+rFrvv0Xv0=
+>=WoQX
+>-----END PGP SIGNATURE-----
+>_______________________________________________
+>Bf-dev-devel mailing list
+>Bf-dev-devel at lists.berlios.de
+>http://lists.berlios.de/mailman/listinfo/bf-dev-devel
+>
+>
+>  
+>
+
+
+
+From fuzn at gmx.at  Sat Mar  4 21:09:39 2006
+From: fuzn at gmx.at (Wolfgang Moser)
+Date: Sat, 04 Mar 2006 21:09:39 +0100
+Subject: [Bf-dev-devel] Abgabetermin
+Message-ID: <4409F403.70002@gmx.at>
+
+M?ssen wir das Feinkonzept jetzt am Dienstag oder am Donnerstag abgeben?
+
+
+From d.posch at inode.at  Sun Mar  5 01:48:53 2006
+From: d.posch at inode.at (Daniel Posch)
+Date: Sun, 05 Mar 2006 01:48:53 +0100
+Subject: [Bf-dev-devel] ICQ?
+In-Reply-To: <4409F08B.2020708@gmx.at>
+References: <4409A512.4050206@gmx.at> <4409D15A.7090407@inode.at> <4409F08B.2020708@gmx.at>
+Message-ID: <440A3575.2060500@inode.at>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Wolfgang Moser wrote:
+> Ich war heute den ganzen Tag online, niemand au?er mir war da.
+> Ich hab dich, Daniel, und David versucht anzurufen. Ohne Erfolg.
+> Hiermit bitte ich auch Bernhard seine Telefonnummer preiszugeben, da ich
+> die nicht habe.
+Tut mir leid, ich hab bis am sp?ten Nachmittag geschlafen und deswegen
+mein Telefon erst gegen 5 Uhr eingeschaltet und ungef?hr gleichzeitig
+deine Mails gelesen. Das ist aber nicht die Regel!
+
+- ---
+Daniel Posch
+Brainfuck Studio Project Leader
+d.posch at inode.at
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.2 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+
+iD8DBQFECjV1JUJZxetoOPARAnHXAJ9MZ07zVw4lN2vodLpaU3lmhlVhbwCfTt2g
+P3uUYXIvAfBix5COqZSKOgw=
+=CnWy
+-----END PGP SIGNATURE-----
+
+
+From d.posch at inode.at  Sun Mar  5 01:51:45 2006
+From: d.posch at inode.at (Daniel Posch)
+Date: Sun, 05 Mar 2006 01:51:45 +0100
+Subject: [Bf-dev-devel] Abgabetermin
+In-Reply-To: <4409F403.70002@gmx.at>
+References: <4409F403.70002@gmx.at>
+Message-ID: <440A3621.7090104@inode.at>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Wolfgang Moser wrote:
+> M?ssen wir das Feinkonzept jetzt am Dienstag oder am Donnerstag abgeben?
+Das ist ungewiss, er hat nur gesagt "n?chste Woche"; wir leider m?ssen
+Donnerstag annehmen, weil wir sonst nicht zurecht kommen. Aber selbst
+bis Donnerstag wird's knapp.
+
+- ---
+Daniel Posch
+Brainfuck Studio Project Leader
+d.posch at inode.at
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.2 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+
+iD8DBQFECjYhJUJZxetoOPARAgh1AKCT+nXyLMQlCOPWSknroqCjsr6YzwCglB1X
+EMNewk1sw8XYiSMZ1W2qznc=
+=nPjs
+-----END PGP SIGNATURE-----
+
+
+From d.posch at inode.at  Sun Mar  5 02:13:10 2006
+From: d.posch at inode.at (Daniel Posch)
+Date: Sun, 05 Mar 2006 02:13:10 +0100
+Subject: [Bf-dev-devel] Feinkonzept
+In-Reply-To: <4409F241.4030802@gmx.at>
+References: <43E60A7D.6000009@inode.at> <43EB6059.8090304@inode.at> <4409A145.4010004@gmx.at> <4409D0F7.1070208@inode.at> <4409D40E.6050508@gmx.at> <4409E006.6000400@inode.at> <4409E228.7090706@inode.at> <4409F241.4030802@gmx.at>
+Message-ID: <440A3B26.7070608@inode.at>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Wolfgang Moser wrote:
+> Ja, ich hab sie beschrieben, nur ist die Beschreibung sehr, sehr grob.
+> Einzelne Buttons die zb der Debugging Tabelle vorangestellt oder
+> nachgestellt werden um sie oder ihre Einstellungen zu ver?ndern wurden
+> nicht erl?utert.
+Es sind keine Buttons oder ?hnliches zu machen, nur eine Tabelle f?r den
+Debugger und ein (nicht editierbares) Textfeld f?r den Compiler.
+S?mtliche Einstellungen sollen ?ber "Settings" erreichbar sein
+(/trunk/src/settings.ui). Den Settings Dialog mache ich, einfach aus dem
+Grund, weil ich selber noch nicht wei?, was alles reinkommt. Es bleibt
+f?r das Main Window nur die Frage ob der Debugger (also, die Tabelle) im
+linken Bereich platziert wird oder doch lieber im unteren Bereich als
+Tab (so wie der Compiler). Letzteres scheint mir doch sympatischer, so
+wird es auch bei gro?en Entwicklungsumgebungen gemacht. Sollte es so
+gemacht werden, hier die Aufteilung, von oben nach unten:
+
+ * Titelleiste
+ * Men?leiste
+ * Toolbar
+ * Child Windows mit TextArea (im Designer nicht zu ber?cksichtigen; das
+ist IMO gar nicht m?glich)
+ * Tabbar mit zwei Tabs:
+	- Compiler: Beinhaltet eine nicht editierbare TextArea
+	- Debugger: Beinhaltet eine Tabelle, die wir halt irgendwie erweitern
+k?nnen m?ssen
+ * Statusbar
+
+Das ist IMO alles. Fehlt was?
+
+> Da du wie mir scheint nicht sehr gewillt bist, mehr Infos dar?ber
+> herauszur?cken, werde ich versuchen ein primitives Groblayout zu machen
+> und dann ?ber SVN bereitstellen. Danach erwarte ich mir ein Feedback.
+Nat?rlich bin ich gewillt dir Informationen zu geben, aber ich tu mir
+etwas schwer zu erraten was genau dir nicht klar ist. Aber deine
+Einstellung gef?llt mir sehr gut, du tust wenigstens das was innerhalb
+deiner M?glichkeiten liegt. So gro? ist das Main Window nicht und wie
+gesagt, ich stehe gerne f?r Fragen bereit; du musst nur genau fragen,
+dass ich auch genau antworten kann.
+
+- ---
+Daniel Posch
+Brainfuck Studio Project Leader
+d.posch at inode.at
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.2 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+
+iD8DBQFECjslJUJZxetoOPARAs4gAKCHfmX+MtfEhKbXn/YXO/stPFJGcwCffYdK
+pbg+/WFi39zXgla3Ro46mxs=
+=ya0p
+-----END PGP SIGNATURE-----
+
+
+From fuzn at gmx.at  Sun Mar  5 14:03:02 2006
+From: fuzn at gmx.at (Wolfgang Moser)
+Date: Sun, 05 Mar 2006 14:03:02 +0100
+Subject: [Bf-dev-devel] Feinkonzept
+In-Reply-To: <440A3B26.7070608@inode.at>
+References: <43E60A7D.6000009@inode.at> <43EB6059.8090304@inode.at> <4409A145.4010004@gmx.at> <4409D0F7.1070208@inode.at> <4409D40E.6050508@gmx.at> <4409E006.6000400@inode.at> <4409E228.7090706@inode.at> <4409F241.4030802@gmx.at> <440A3B26.7070608@inode.at>
+Message-ID: <440AE186.8040204@gmx.at>
+
+Ich denke, dass mir jetzt alles ziemlich klar ist. Werde mich nun an die 
+Arbeit machen. Danke f?r die Infos.
+
+Daniel Posch schrieb:
+
+>-----BEGIN PGP SIGNED MESSAGE-----
+>Hash: SHA1
+>
+>Wolfgang Moser wrote:
+>  
+>
+>>Ja, ich hab sie beschrieben, nur ist die Beschreibung sehr, sehr grob.
+>>Einzelne Buttons die zb der Debugging Tabelle vorangestellt oder
+>>nachgestellt werden um sie oder ihre Einstellungen zu ver?ndern wurden
+>>nicht erl?utert.
+>>    
+>>
+>Es sind keine Buttons oder ?hnliches zu machen, nur eine Tabelle f?r den
+>Debugger und ein (nicht editierbares) Textfeld f?r den Compiler.
+>S?mtliche Einstellungen sollen ?ber "Settings" erreichbar sein
+>(/trunk/src/settings.ui). Den Settings Dialog mache ich, einfach aus dem
+>Grund, weil ich selber noch nicht wei?, was alles reinkommt. Es bleibt
+>f?r das Main Window nur die Frage ob der Debugger (also, die Tabelle) im
+>linken Bereich platziert wird oder doch lieber im unteren Bereich als
+>Tab (so wie der Compiler). Letzteres scheint mir doch sympatischer, so
+>wird es auch bei gro?en Entwicklungsumgebungen gemacht. Sollte es so
+>gemacht werden, hier die Aufteilung, von oben nach unten:
+>
+> * Titelleiste
+> * Men?leiste
+> * Toolbar
+> * Child Windows mit TextArea (im Designer nicht zu ber?cksichtigen; das
+>ist IMO gar nicht m?glich)
+> * Tabbar mit zwei Tabs:
+>	- Compiler: Beinhaltet eine nicht editierbare TextArea
+>	- Debugger: Beinhaltet eine Tabelle, die wir halt irgendwie erweitern
+>k?nnen m?ssen
+> * Statusbar
+>
+>Das ist IMO alles. Fehlt was?
+>
+>  
+>
+>>Da du wie mir scheint nicht sehr gewillt bist, mehr Infos dar?ber
+>>herauszur?cken, werde ich versuchen ein primitives Groblayout zu machen
+>>und dann ?ber SVN bereitstellen. Danach erwarte ich mir ein Feedback.
+>>    
+>>
+>Nat?rlich bin ich gewillt dir Informationen zu geben, aber ich tu mir
+>etwas schwer zu erraten was genau dir nicht klar ist. Aber deine
+>Einstellung gef?llt mir sehr gut, du tust wenigstens das was innerhalb
+>deiner M?glichkeiten liegt. So gro? ist das Main Window nicht und wie
+>gesagt, ich stehe gerne f?r Fragen bereit; du musst nur genau fragen,
+>dass ich auch genau antworten kann.
+>
+>- ---
+>Daniel Posch
+>Brainfuck Studio Project Leader
+>d.posch at inode.at
+>-----BEGIN PGP SIGNATURE-----
+>Version: GnuPG v1.4.2 (GNU/Linux)
+>Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+>
+>iD8DBQFECjslJUJZxetoOPARAs4gAKCHfmX+MtfEhKbXn/YXO/stPFJGcwCffYdK
+>pbg+/WFi39zXgla3Ro46mxs=
+>=ya0p
+>-----END PGP SIGNATURE-----
+>_______________________________________________
+>Bf-dev-devel mailing list
+>Bf-dev-devel at lists.berlios.de
+>http://lists.berlios.de/mailman/listinfo/bf-dev-devel
+>
+>
+>  
+>
+
+
+
+From d.posch at inode.at  Sun Mar  5 14:49:46 2006
+From: d.posch at inode.at (Daniel Posch)
+Date: Sun, 05 Mar 2006 14:49:46 +0100
+Subject: [Bf-dev-devel] Feinkonzept
+In-Reply-To: <440AE186.8040204@gmx.at>
+References: <43E60A7D.6000009@inode.at> <43EB6059.8090304@inode.at> <4409A145.4010004@gmx.at> <4409D0F7.1070208@inode.at> <4409D40E.6050508@gmx.at> <4409E006.6000400@inode.at> <4409E228.7090706@inode.at> <4409F241.4030802@gmx.at> <440A3B26.7070608@inode.at> <440AE186.8040204@gmx.at>
+Message-ID: <440AEC7A.5000204@inode.at>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Wolfgang Moser wrote:
+> Ich denke, dass mir jetzt alles ziemlich klar ist. Werde mich nun an die
+> Arbeit machen. Danke f?r die Infos.
+Sehr gut! Bittesch?n!
+
+Okay, dann gibt's hier noch Informationen zur Toolbar bzw. welche Icons
+sie beinhalten soll:
+
+"New File", "Open File" | "Save", "Save As..." | "Print" | "Close" |
+"Undo", "Redo", "Cut", "Copy", "Paste" | "Compile" (mit Unterauswahl zur
+Auswahl der Zielplattform), "Debug"
+
+... wobei "|" einem Separator entspricht.
+
+Eventuell sind die M?glichkeiten beim Debuggen (Next Step, Previous Step
+und Stop) noch zu ber?cksichtigen. Ideal w?re es, wenn diese Punkte erst
+beim Debuggen aufscheinen, aber das ist eine Sache des Aufwands. Wenn
+der zu hoch ist, k?nnen wir's auch entweder gleich in die Toolbar
+integrieren und vorerst deaktivieren (so dass man es nicht anklicken
+kann) oder ganz weglassen. Bitte informiert euch dar?ber!
+
+- ---
+Daniel Posch
+Brainfuck Studio Project Leader
+d.posch at inode.at
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.2 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+
+iD8DBQFECux6JUJZxetoOPARAodlAJ9e2Paq4NFY6n99xwjRihPq/QC/2wCgoe4V
+rNvmrALD19q30OfnuuaurWs=
+=C9Wa
+-----END PGP SIGNATURE-----
+
+
+From fuzn at gmx.at  Sun Mar  5 20:30:13 2006
+From: fuzn at gmx.at (Wolfgang Moser)
+Date: Sun, 05 Mar 2006 20:30:13 +0100
+Subject: [Bf-dev-devel] =?ISO-8859-15?Q?GUI-Grundger=FCst?=
+Message-ID: <440B3C45.8020408@gmx.at>
+
+Hab dem Main Window ein Grundger?st gegeben und einige Icons aus dem 
+Tango Projekt verwendet.
+
+F?r die Buttons "Compile" und "Debug" gibts im Tango Projekt keine 
+Icons, da m?ssen wir schauen wie wir uns da welche herzaubern oder 
+einfach andere aus dem Tango Projekt nehmen. Das gilt auch f?r viele 
+weitere Icons.
+Eine andere M?glichkeit, die ich vorschlagen w?rde, w?re, dass wir nur 
+f?r die Toolbar Icons verwenden und nicht f?r die Men?punkte auch (was 
+ich aber gemacht habe).
+
+Da Reiter "Debug" gef?llt mir noch nicht. Die Tabelle m?ssen wir 
+irgendwie anders machen.
+
+Sagt mal eure Meinung zum bisherigen.
+
+
+From d.posch at inode.at  Sun Mar 19 11:55:48 2006
+From: d.posch at inode.at (Daniel Posch)
+Date: Sun, 19 Mar 2006 11:55:48 +0100
+Subject: [Bf-dev-devel] Zwecks 23. =?UTF-8?B?TcOkcno6IMOcYmVyYXJiZWl0dW5nIGRlcyBGZWlua29u?=
+ =?UTF-8?B?emVwdHMgdW5kIFJlYWxpc2llcnVuZ3NwbGFu?=
+Message-ID: <441D38B4.2000007@inode.at>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Kaum ist das Feinkonzept abgegeben, folgen die n?chsten Arbeitsschritte.
+Ich habe sie hier aufgez?hlt und euch zugeteilt und bitte euch, euren
+Teil der Arbeit schnellstm?glich zu erledigen. Wenn mehrere Leute an
+einem Teil arbeiten, erwarte ich, dass ihr euch selber zusammenredet.
+
+ - Verbesserung der Rechtschreibfehler im Feinkonzept: B. Kragl
+ - Erstellung einer ?bersicht der Komponenten mittels einem
+UML-Komponentendiagramm: B. Kragl
+ - Erstellung eines UML-Klassendiagramms: D. Posch, D. Christa
+ - Portierung der Flowcharts zu UML-Aktivit?tsdiagramm: D. Christa
+ - ?berschreiben der Beschreibung der Punkte Compiler/Debugger: W. Moser
+ - Portierung der Zeitplanung auf MS Project: B. Kragl
+ - Aktualisierung des Ablaufplans zum Realisierungsplan: W. Moser, D. Posch
+ - Benutzeroberfl?che f?r Implementation aufbereiten: W. Moser, B.
+Kragl, D. Posch
+
+Bei Fragen schickt bitte sofort eine Mail!
+
+Danke!
+
+- ---
+Daniel Posch
+Brainfuck Studio Project Leader
+d.posch at inode.at
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.2.2 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+
+iD8DBQFEHTi0JUJZxetoOPARAsDhAJ0bUPf1vqLiH4q+XeY7WeG2+ZASZwCcCSqp
+SsCA0dz74sscGOYli+RQbYk=
+=m2gQ
+-----END PGP SIGNATURE-----
+
+
+From boern at gmx.at  Wed Mar 22 17:52:23 2006
+From: boern at gmx.at (Bernhard Kragl)
+Date: Wed, 22 Mar 2006 17:52:23 +0100
+Subject: [Bf-dev-devel] mundl notizen im feinkonzept
+Message-ID: <442180C7.7070905@gmx.at>
+
+deckblatt:
+* Fkt.-Baum als Gesamt?bersicht (S. 20)
+* S. 12 / Klassendiagramm (nachzuliefern)
+* Im Projekt zu erstellende Komponenten/Konponentendiagramm
+
+Seite 10 mitte:
+Syntax-Highlighting - M?glichkeiten f?r weitere Ma?nahmen vorbehalten / 
+im FK festlegen!!
+
+Seite 12:
+UML-Diagramm nachbringen
+
+Seite 22:
+Undo: wie viele Schritte zur?ck??
+
+Seite 25:
+Levels: verweis auf weiter hinten machen
+
+Seite 27 Compiler:
+4-ter Punkt: falls parser fehler findet, abbrechen / abbruch sofort beim 
+erten entdeckten fehler???
+
+Seite 28:
+Abgerundete Ecken bei Start und Ende!!
+
+Source als ASCII-Datei und Source als C++-String sind eingeringelt:
+       BF-Code
+       Code in Speicher eingelesen
+       Im Projekt zu erstellen!!
+       Umsetzten in Assembler
+Bei diesem Punkt kann ich pers?nlich die Notizen nicht wirklich deuten ;-)
+
+Seite 29:
+Start und Ende mit abgerundeten Kanten
+
+Seite 31:
+Start und Ende mit abgerundeten Kanten
+
+Seite 33:
+8.3.2 level 2
+       "tot zu optimieren" ist mit wellenlinie unterstrichen
+
+Seite 36:
+Debugger-Diagramm:
+       Zellwert Aktualisieren -> aktualisieren geh?rt klein geschrieben
+
+Seite 37:
+Start und Ende mit abgerundeten Kanten
+
+Seite 38:
+Parameter-Einstellungen beim Aufruf
+
+

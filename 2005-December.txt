@@ -1,0 +1,526 @@
+From d.posch at inode.at  Mon Dec  5 22:59:51 2005
+From: d.posch at inode.at (Daniel Posch)
+Date: Mon, 05 Dec 2005 22:59:51 +0100
+Subject: [Bf-dev-devel] EN ISO 9241 - 10
+Message-ID: <4394B857.8020006@inode.at>
+
+Guten Abend!
+
+Obwohl dies zugegebenerma?en kein sehr einladender Titel ist, ist das 
+Thema das sich dahinter verbirgt hoch interessant und wichtig! Es geht 
+um die Norm EN ISO 9241, in der Kriterien f?r das Design ergonomischer 
+Benutzerschnittstellen definiert sind.
+
+Die erste berechtigte Frage die sich der ein oder andere hier eventuell 
+stellt, ist der Nutzen der Einhaltung dieser Norm. Nun, die EN ISO 9241 
+ist eine so genannte Human Interface Guideline. Eine Human Interface 
+Guideline (HIG, engl. f?r "Richtlinie f?r Benutzerschnittstellen") 
+definiert die Schnittstelle zwischen Mensch und Computer, wobei meistens 
+die Richtlinien der Software-Ergonomie (Stichwort: "Usability") 
+ber?cksichtigt werden. Die bekannteste Human Interface Guideline ist 
+wahrscheinliche jene von Apple [1], allerdings sind solche Richtlinien 
+unter anderem auch von IBM, GNOME [2], KDE [3] und Java [4] bekannt. 
+Beim Brainfuck Studio Project konzentrieren wir uns haupts?chlich auf 
+die von ISO definierte Norm. Wenn wir beim Design der GUI auch Elemente 
+anderer HIGs einflie?en lassen, w?rde ich sagen, k?nnen wir davon nur 
+profitieren. Wichtig ist aber, Schritt f?r Schritt an das Problem 
+heranzugehen. Darum m?chte ich in dieser Mail erst einmal die 
+Grundprinzipien der EN ISO 9241 erkl?ren, nach deren Vorbild wir, wie 
+bereits in unserem Pflichtenheft festgelegt, den GUI-Teil unserer IDE 
+gestalten wollen.
+
+Sie besteht insgesamt aus 17 Teilen:
+
+     Teil 1: Allgemeine Einf?hrung
+     Teil 2: Anforderungen an die Arbeitsaufgaben - Leits?tze
+     Teil 3: Anforderungen an visuelle Anzeigen
+     Teil 4: Anforderungen an Tastaturen
+     Teil 5: Anforderungen an die Arbeitsplatzgestaltung und K?rperhaltung
+     Teil 6: Anforderungen an die Arbeitsumgebung
+     Teil 7: Anforderungen an visuelle Anzeigen bez?glich Reflexionen
+     Teil 8: Anforderungen an Farbdarstellungen
+     Teil 9: Anforderungen an Eingabeger?te au?er Tastaturen
+     Teil 10: Grunds?tze der Dialoggestaltung
+     Teil 11: Anforderungen an die Gebrauchstauglichkeit - Leits?tze
+     Teil 12: Informationsdarstellung
+     Teil 13: Benutzerf?hrung
+     Teil 14: Dialogf?hrung mittels Men?s
+     Teil 15: Dialogf?hrung mittels Kommandosprachen
+     Teil 16: Dialogf?hrung mittels direkter Manipulation
+     Teil 17: Dialogf?hrung mittels Bildschirmformularen
+
+Besonders interessant ist wohl Teil 10, Grunds?tze der Dialoggestaltung, 
+auf der die direkte Interaktion mit dem Benutzer festgehalten wird.
+
+Die EN ISO 9241 - 10: Grunds?tze der Dialoggestaltung
+
+1. Einfach und direkt zum Ziel: Aufgabenangemessenheit
+
+"Ein Dialog ist aufgabenangemessen, wenn er den Benutzer unterst?tzt, 
+seine Arbeitsaufgbe effektiv und effizient zu erledigen."
+
+
+2. Wenn Intuition ausreicht: Selbstbeschreibungsf?higkeit
+
+"Ein Dialog ist selbstbeschreibungsf?hig, wenn jeder einzelne 
+Dialogschritt durch R?ckmeldung des Dialogsystems unmittelbar 
+verst?ndlich ist oder dem Benutzer auf Anfrage erkl?rt wird."
+
+
+3. Wenn alles unter Kontrolle ist: Steuerbarkeit
+
+"Ein Dialog ist steuerbar, wenn der Benutzer in der Lage ist, den 
+Dialogablauf zu starten sowie seine Richtung und Geschwindigkeit zu 
+beeinflussen, bis das Ziel erreicht ist."
+
+
+4. Wenn es zur Gewohnheit wird: Erwartungskonformit?t
+
+"Ein Dialog ist erwartungskonform, wenn er konsistent ist und den 
+Merkmalen des Benutzers entspricht, z.B. seinen Kenntnissen aus dem 
+Arbeitsgebiet, seiner Ausbildung und seiner Erfahrung sowie den 
+allgemein anerkannten Konventionen."
+
+
+5. Wenn unliebsame ?berraschungen ausbleiben: Fehlertoleranz
+
+"Ein Dialog ist fehlertolerant, wenn das beabsichtigte Arbeitsergebnis 
+trotz erkennbar fehlerhafter Eingaben entweder mit keinem oder mit 
+minimalem Korrekturaufwand seitens des Benutzers erreicht werden kann.?
+
+
+6. Wenn jeder arbeitet, wie es ihm beliebt: Individualisierbarkeit
+
+"Ein Dialog ist individualisierbar, wenn das Dialogsystem Anpassungen an 
+die Erfordernisse der Arbeitsaufgabe sowie an die individuellen 
+F?higkeiten und Vorlieben des Benutzers zul??t."
+
+
+7. Wenn man schlauer wird:  Lernf?rderlichkeit
+
+"Ein Dialog ist lernf?rderlich, wenn er den Benutzer beim Erlernen des 
+Dialogsystems unterst?tzt und anleitet."
+
+
+Die Prinzipien sind wirklich keine Geheimwissenschaft und relativ 
+?berschaulich noch dazu. Das Problem bei derartigen Normen ist, dass sie 
+nicht frei einsehbar sind. Man muss sie kaufen und das geht ordentlich 
+ins Geld. Die EN ISO 9241 - 10 ist mit ca. 40 ? noch relativ billig. 
+Kauft man sich gesamte Norm, streift man schon in Richtung der 1000 ? 
+Marke. Das ist gegen?ber Standards wie den Apple HIGs ein entscheidender 
+Nachteil.
+
+Fazit:
+Ich pers?nliche denke, dass wir einstweilen sehr gut beraten sind, wenn 
+wir nur die 7 Grunds?tze der EN ISO 9241 - 10 einhalten. Alle weiteren 
+Anforderungen die ich dann im Grobkonzept verankere bedeuten ein h?heren 
+Aufwand f?r jeden von uns, der sich (noch) nicht lohnt.
+
+Was ist eure Meinung dazu?
+
+
+[1] 
+http://developer.apple.com/documentation/UserExperience/Conceptual/OSXHIGuidelines/
+[2] http://developer.gnome.org/projects/gup/hig/
+[3] 
+http://developer.kde.org/documentation/standards/kde/style/basics/index.html
+[4] http://java.sun.com/products/jlf/ed2/book/index.html
+
+-- 
+Daniel Posch
+Brainfuck Studio Project Leader
+danpo at users.berlios.de
+
+
+From d.posch at inode.at  Mon Dec  5 23:03:38 2005
+From: d.posch at inode.at (Daniel Posch)
+Date: Mon, 05 Dec 2005 23:03:38 +0100
+Subject: [Bf-dev-devel] EN ISO 9241 - 10
+Message-ID: <4394B93A.3010306@inode.at>
+
+Guten Abend!
+
+Obwohl dies zugegebenerma?en kein sehr einladender Titel ist, ist das
+Thema das sich dahinter verbirgt hoch interessant und wichtig! Es geht
+um die Norm EN ISO 9241, in der Kriterien f?r das Design ergonomischer
+Benutzerschnittstellen definiert sind.
+
+Die erste berechtigte Frage die sich der ein oder andere hier eventuell
+stellt, ist der Nutzen der Einhaltung dieser Norm. Nun, die EN ISO 9241
+ist eine so genannte Human Interface Guideline. Eine Human Interface
+Guideline (HIG, engl. f?r "Richtlinie f?r Benutzerschnittstellen")
+definiert die Schnittstelle zwischen Mensch und Computer, wobei meistens
+die Richtlinien der Software-Ergonomie (Stichwort: "Usability")
+ber?cksichtigt werden. Die bekannteste Human Interface Guideline ist
+wahrscheinliche jene von Apple [1], allerdings sind solche Richtlinien
+unter anderem auch von IBM, GNOME [2], KDE [3] und Java [4] bekannt.
+Beim Brainfuck Studio Project konzentrieren wir uns haupts?chlich auf
+die von ISO definierte Norm. Wenn wir beim Design der GUI auch Elemente
+anderer HIGs einflie?en lassen, w?rde ich sagen, k?nnen wir davon nur
+profitieren. Wichtig ist aber, Schritt f?r Schritt an das Problem
+heranzugehen. Darum m?chte ich in dieser Mail erst einmal die
+Grundprinzipien der EN ISO 9241 erkl?ren, nach deren Vorbild wir, wie
+bereits in unserem Pflichtenheft festgelegt, den GUI-Teil unserer IDE
+gestalten wollen.
+
+Sie besteht insgesamt aus 17 Teilen:
+
+     Teil 1: Allgemeine Einf?hrung
+     Teil 2: Anforderungen an die Arbeitsaufgaben - Leits?tze
+     Teil 3: Anforderungen an visuelle Anzeigen
+     Teil 4: Anforderungen an Tastaturen
+     Teil 5: Anforderungen an die Arbeitsplatzgestaltung und K?rperhaltung
+     Teil 6: Anforderungen an die Arbeitsumgebung
+     Teil 7: Anforderungen an visuelle Anzeigen bez?glich Reflexionen
+     Teil 8: Anforderungen an Farbdarstellungen
+     Teil 9: Anforderungen an Eingabeger?te au?er Tastaturen
+     Teil 10: Grunds?tze der Dialoggestaltung
+     Teil 11: Anforderungen an die Gebrauchstauglichkeit - Leits?tze
+     Teil 12: Informationsdarstellung
+     Teil 13: Benutzerf?hrung
+     Teil 14: Dialogf?hrung mittels Men?s
+     Teil 15: Dialogf?hrung mittels Kommandosprachen
+     Teil 16: Dialogf?hrung mittels direkter Manipulation
+     Teil 17: Dialogf?hrung mittels Bildschirmformularen
+
+Besonders interessant ist wohl Teil 10, Grunds?tze der Dialoggestaltung,
+auf der die direkte Interaktion mit dem Benutzer festgehalten wird.
+
+Die EN ISO 9241 - 10: Grunds?tze der Dialoggestaltung
+
+1. Einfach und direkt zum Ziel: Aufgabenangemessenheit
+
+"Ein Dialog ist aufgabenangemessen, wenn er den Benutzer unterst?tzt,
+seine Arbeitsaufgbe effektiv und effizient zu erledigen."
+
+
+2. Wenn Intuition ausreicht: Selbstbeschreibungsf?higkeit
+
+"Ein Dialog ist selbstbeschreibungsf?hig, wenn jeder einzelne
+Dialogschritt durch R?ckmeldung des Dialogsystems unmittelbar
+verst?ndlich ist oder dem Benutzer auf Anfrage erkl?rt wird."
+
+
+3. Wenn alles unter Kontrolle ist: Steuerbarkeit
+
+"Ein Dialog ist steuerbar, wenn der Benutzer in der Lage ist, den
+Dialogablauf zu starten sowie seine Richtung und Geschwindigkeit zu
+beeinflussen, bis das Ziel erreicht ist."
+
+
+4. Wenn es zur Gewohnheit wird: Erwartungskonformit?t
+
+"Ein Dialog ist erwartungskonform, wenn er konsistent ist und den
+Merkmalen des Benutzers entspricht, z.B. seinen Kenntnissen aus dem
+Arbeitsgebiet, seiner Ausbildung und seiner Erfahrung sowie den
+allgemein anerkannten Konventionen."
+
+
+5. Wenn unliebsame ?berraschungen ausbleiben: Fehlertoleranz
+
+"Ein Dialog ist fehlertolerant, wenn das beabsichtigte Arbeitsergebnis
+trotz erkennbar fehlerhafter Eingaben entweder mit keinem oder mit
+minimalem Korrekturaufwand seitens des Benutzers erreicht werden kann.?
+
+
+6. Wenn jeder arbeitet, wie es ihm beliebt: Individualisierbarkeit
+
+"Ein Dialog ist individualisierbar, wenn das Dialogsystem Anpassungen an
+die Erfordernisse der Arbeitsaufgabe sowie an die individuellen
+F?higkeiten und Vorlieben des Benutzers zul??t."
+
+
+7. Wenn man schlauer wird:  Lernf?rderlichkeit
+
+"Ein Dialog ist lernf?rderlich, wenn er den Benutzer beim Erlernen des
+Dialogsystems unterst?tzt und anleitet."
+
+
+Die Prinzipien sind wirklich keine Geheimwissenschaft und relativ
+?berschaulich noch dazu. Das Problem bei derartigen Normen ist, dass sie
+nicht frei einsehbar sind. Man muss sie kaufen und das geht ordentlich
+ins Geld. Die EN ISO 9241 - 10 ist mit ca. 40 ? noch relativ billig.
+Kauft man sich gesamte Norm, streift man schon in Richtung der 1000 ?
+Marke. Das ist gegen?ber Standards wie den Apple HIGs ein entscheidender
+Nachteil.
+
+Fazit:
+Ich pers?nliche denke, dass wir einstweilen sehr gut beraten sind, wenn
+wir nur die 7 Grunds?tze der EN ISO 9241 - 10 einhalten. Alle weiteren
+Anforderungen die ich dann im Grobkonzept verankere bedeuten ein h?heren
+Aufwand f?r jeden von uns, der sich (noch) nicht lohnt.
+
+Was ist eure Meinung dazu?
+
+
+[1]
+http://developer.apple.com/documentation/UserExperience/Conceptual/OSXHIGuidelines/
+[2] http://developer.gnome.org/projects/gup/hig/
+[3]
+http://developer.kde.org/documentation/standards/kde/style/basics/index.html
+[4] http://java.sun.com/products/jlf/ed2/book/index.html
+
+-- 
+Daniel Posch
+Brainfuck Studio Project Leader
+danpo at users.berlios.de
+
+
+
+From d.posch at inode.at  Thu Dec  8 17:05:55 2005
+From: d.posch at inode.at (Daniel Posch)
+Date: Thu, 08 Dec 2005 17:05:55 +0100
+Subject: [Bf-dev-devel] Projekttagebuch
+Message-ID: <439859E3.7060008@inode.at>
+
+Hallo allerseits!
+
+Wie bereits w?hrend PRE angek?ndigt m?ssen wir ein Projekttagebuch 
+f?hren, welches jederzeit mitzuf?hren ist (zumindest im PRE-Unterricht).
+
+Da es f?r uns nun h?chste Zeit ist endlich damit zu beginnen unsere 
+Aktivit?ten zu protokollieren habe ich ein grobes Tagebuch erstellt. Ich 
+werde es im Laufe des heutigen Abends mitsamt den anderen Dokumenten die 
+wir bisher erstellt haben auf das Subversion-Repository hochladen. Mehr 
+Informationen zu Subversion kommen gleich in einer weiteren Mail.
+
+Bitte besorgt euch das Tagebuch schnellstm?glichst und protokolliert 
+darin eure T?tigkeiten! Vergesst nicht es anschlie?end wieder hochzuladen!
+
+Wenn jemand Zeit dazu hat, bitte ich euch die fehlenden Daten (oder 
+sonstige Fehler?) zu korrigieren. Vielen Danke im Vorraus!
+
+-- 
+Daniel Posch
+Brainfuck Studio Project Leader
+danpo at users.berlios.de
+
+
+From d.posch at inode.at  Thu Dec  8 17:13:40 2005
+From: d.posch at inode.at (Daniel Posch)
+Date: Thu, 08 Dec 2005 17:13:40 +0100
+Subject: [Bf-dev-devel] Subversion (SVN)
+Message-ID: <43985BB4.9030700@inode.at>
+
+Nochmals hallo!
+
+Wie bereits in meiner vorherigen Mail betreffend dem Projekttagebuch 
+erw?hnt, wird es nun h?chste Zeit, dass ihr euch m?glichst schnell mit 
+Subversion auseinandersetzt. Das Subversion-Repository, das uns Berlios 
+bereitsstellt, ist die optimale M?glichkeit zur verteilten Arbeit an 
+ein- und denselben Daten. So m?ssen wir es jetzt ?fters machen (m?ssen), 
+erste Beispiele sind zB das Grobkonzept und das Projekttagebuch.
+
+Als erste Informationsquelle ist das Subversion Buch [1] zu empfehlen. 
+Wenn man ein bisschen Zeit investiert findet man sich damit schnell 
+zurecht. Ein hei?er Tipp ist auch das SVN-HowTo von Berlios [2], wo 
+Berlios-spezifische Dinge beschrieben sind.
+
+Sollte ich die Zeit dazu finden, werde ich die wichtigsten Kommandos f?r 
+euch zusammenfassen und im Laufe der n?chsten Tage wie immer per Mail 
+schicken.
+
+[1] http://svnbook.red-bean.com/
+[2] https://developer.berlios.de/docman/display_doc.php?docid=394&group_id=2
+
+-- 
+Daniel Posch
+Brainfuck Studio Project Leader
+danpo at users.berlios.de
+
+
+From d.posch at inode.at  Sat Dec 10 17:56:06 2005
+From: d.posch at inode.at (Daniel Posch)
+Date: Sat, 10 Dec 2005 17:56:06 +0100
+Subject: [Bf-dev-devel] Teamsitzung am Montag, 12. Dezember 2005
+Message-ID: <439B08A6.7030409@inode.at>
+
+Nach diversen Problemen mit der Verwendung von Berlios.de, schlage ich 
+eine weitere Teamsitzung am
+
+Montag, 12. Dezember 2005 in der 6. Unterrichtseinheit (12:40 - 13:35)
+
+vor, w?hrend der diese Probleme gekl?rt werden sollen. Vorraussetzung 
+ist eine Internetverbindung, aber nachdem der neue Accesspoint im 
+PRRV-Saal nun endlich funktioniert, denke ich nicht, dass uns das 
+Schwierigkeiten bereitet.
+
+Die Teilname ist kein muss, allerdings erwarte ich ab Montag von jedem, 
+dass er, wenn wir schon die Gelegenheit dazu haben, Berlios ben?tzen kann.
+
+-- 
+Daniel Posch
+Brainfuck Studio Project Leader
+danpo at users.berlios.de
+
+
+From d.posch at inode.at  Sat Dec 10 18:09:34 2005
+From: d.posch at inode.at (Daniel Posch)
+Date: Sat, 10 Dec 2005 18:09:34 +0100
+Subject: [Bf-dev-devel] Wiki gestartet
+Message-ID: <439B0BCE.1020201@inode.at>
+
+Ich habe gestern Abend noch ein Wiki auf den uns zur Verf?gung 
+gestellten Webspace unter http://bf-dev.berlios.de/ hochgeladen und 
+konfiguriert. Das Wiki wird von nun an als Webseite dienen, da dies 
+meines Erachtens sinnvoller ist als das aufwendige Erstellen einer 
+eigenen Homepage. Das Wiki ist au?erdem eine ideale Plattform zB f?r die 
+elektronische Verbreitung/Aufbereitung der Dokumentation, aber bis dahin 
+haben wir sowieso noch einen l?ngeren Web vor uns.
+
+Ihr m?sst euch nicht viel damit auseinandersetzen, aber ich erwarte mir 
+von jedem von euch sich zumindest anzumelden und mal den ein- oder 
+anderen Artikel zu schreiben, so dass wir zumindest eine tempor?r eine 
+halbwegs vorzeigbare Pr?senz im Internet haben. Ein entsprechender Task 
+folgt sofort und wird auf eurer pers?nlichen Seite auf Berlios angezeigt 
+werden. Das Grobkonzept hat im Moment eindeutige eine h?here Priorit?t, 
+aber bis Weihnachten sollte das alles kein Problem sein.
+
+Bei Fragen schickt einfach eine Mail an diese Liste oder stellt sie mir 
+am Montag pers?nlich.
+
+-- 
+Daniel Posch
+Brainfuck Studio Project Leader
+danpo at users.berlios.de
+
+
+From d.posch at inode.at  Sat Dec 10 19:04:19 2005
+From: d.posch at inode.at (Daniel Posch)
+Date: Sat, 10 Dec 2005 19:04:19 +0100
+Subject: [Bf-dev-devel] Shared Libraries
+Message-ID: <439B18A3.1060306@inode.at>
+
+Ich bin mir nicht sicher, ob ich mit euch schon dar?ber gesprochen habe, 
+aber einige Programmteile werden als ``Shared Libraries" implementiert 
+werden. Shared Libraries werden direkt beim Programmstart geladen, und 
+wenn sie richtig installiert ist, ben?tzen alle Programme die sp?ter 
+starten automatisch die neue Version. Der Ansatz von Linux erlaubt 
+au?erdem folgendes:
+
+	*  Updaten der Libraries und Support f?r alte Versionen trotzdem 
+beibehalten
+	* ?berschreiben von (Teilen oder einzelnen Funktionen von) Libraries
+	* All das w?hrend die Programme laufen und die Library ben?tzen
+
+Die Teile die auf jeden Fall als Shared Library programmiert werden sind 
+die Brainfuck Parsing Library (BPL) und die Brainfuck Interpreting And 
+Debugging Library (BIDL), da diese je von mehreren Programmkomponenten 
+genutzt werden. Vielleicht k?nnen Teile der GUI auch so realisiert 
+werden, aber das ist noch ungewiss.
+
+Mehr Informationen zu Shared Libraries findet ihr in diesem Howto [1].
+
+Die Steigerung von Shared Libraries w?ren Dynamically Loaded (DL) 
+Libraries, die zu jedem beliebigen Zeitpunkt geladen werden k?nnen. Sie 
+kommen vorwiegend bei Plugins und Modulen vor, wir brauchen sie daher 
+nicht zwingend. Den Umgang mit Shared Libraries muss man auch zuerst mal 
+erlernen.
+
+[1] http://www.tldp.org/HOWTO/Program-Library-HOWTO/
+
+-- 
+Daniel Posch
+Brainfuck Studio Project Leader
+danpo at users.berlios.de
+
+
+
+From boern at gmx.at  Sun Dec 25 00:14:04 2005
+From: boern at gmx.at (Bernhard Kragl)
+Date: Sun, 25 Dec 2005 00:14:04 +0100
+Subject: [Bf-dev-devel] Vom Qt-Designer zum C++-Programm
+Message-ID: <43ADD63C.5090609@gmx.at>
+
+Ich gr??e euch!
+Hab mich mit unseren Mailinglists noch nicht auseinander gesetzt und 
+hoff jetzt einfach mal, dass dies die richtige ist.
+
+Also. Ich hab mich jetzt schon ein bisschen mit Qt und dem Qt-Designer 
+auseinandergesetzt.
+Der grunds?tzliche Vorgang vom zusammengeklickten Window im Qt-Designer 
+sollte so aussehen:
+
+    * Mit dem "Compiler" uic kann man die XML-Beschreibung des Windows
+      in einer vom Qt-Designer erzeugten *.ui-Datei
+      in einen Headerfile umwandeln.
+    * Wie man diesen dann in einer *.cpp-Datei verwendet, wei? ich
+      leider noch nicht.
+    * Falls man dann ein fertiges C++-Programm hat, sieht das
+      Compilieren so aus:
+          o qmake -project <*.cpp>
+          o qmake
+          o make
+    * Nun ist eine ausf?hrbare Datei vorhanden.
+
+Naja, ich hoffe, dieses Mail ersparrt euch lange Manual- bzw. 
+Internetrecherchen.
+
+Noch ein kleiner Tipp: Da schon bei einem kleinen Programm viele Dateien 
+(*.ui, *.pro, *.cpp, Makefile, usw.) anfallen,
+    erstellt ihr euch am besten f?r jedes Projekt einen eigenen Ordner.
+
+lg
+Bernhard
+
+
+From d.posch at inode.at  Mon Dec 26 19:25:30 2005
+From: d.posch at inode.at (Daniel Posch)
+Date: Mon, 26 Dec 2005 19:25:30 +0100
+Subject: [Bf-dev-devel] Vom Qt-Designer zum C++-Programm
+In-Reply-To: <43ADD63C.5090609@gmx.at>
+References: <43ADD63C.5090609@gmx.at>
+Message-ID: <43B0359A.9080006@inode.at>
+
+Bernhard Kragl wrote:
+> Ich gr??e euch!
+> Hab mich mit unseren Mailinglists noch nicht auseinander gesetzt und 
+> hoff jetzt einfach mal, dass dies die richtige ist.
+> 
+> Also. Ich hab mich jetzt schon ein bisschen mit Qt und dem Qt-Designer 
+> auseinandergesetzt.
+> Der grunds?tzliche Vorgang vom zusammengeklickten Window im Qt-Designer 
+> sollte so aussehen:
+> 
+>    * Mit dem "Compiler" uic kann man die XML-Beschreibung des Windows
+>      in einer vom Qt-Designer erzeugten *.ui-Datei
+>      in einen Headerfile umwandeln.
+>    * Wie man diesen dann in einer *.cpp-Datei verwendet, wei? ich
+>      leider noch nicht.
+Ich nehme mal an, dass der Designer bzw. der Compiler das Implementieren 
+nicht ?bernimmt. Wie sieht's denn mit Signal/Slots etc. aus - wird das 
+ordnungsgem?? beachtet?
+
+ >    * Falls man dann ein fertiges C++-Programm hat, sieht das
+ >      Compilieren so aus:
+ >          o qmake -project <*.cpp>
+ >          o qmake
+ >          o make
+ >    * Nun ist eine ausf?hrbare Datei vorhanden.
+Wir m?ssen uns etwas einfallen lassen wie qmake am besten mit Autoconf 
+[1]/Automake [2] verwendet wird. Ich w?rd mich sehr freuen wenn das 
+jemand ?ber die Ferien herausfinden k?nnte.
+qmake ist ?brigens sowieso ein eigener Mechanismus den wir uns noch 
+n?her ansehen m?ssen...
+
+ > Naja, ich hoffe, dieses Mail ersparrt euch lange Manual- bzw.
+ > Internetrecherchen.
+ >
+ > Noch ein kleiner Tipp: Da schon bei einem kleinen Programm viele Dateien
+ > (*.ui, *.pro, *.cpp, Makefile, usw.) anfallen,
+ >    erstellt ihr euch am besten f?r jedes Projekt einen eigenen Ordner.
+Schon gemacht, wie du im SVN-Repository hoffentlich schon erkannt hast. ;)
+
+ >
+ > lg
+ > Bernhard
+
+[1] http://www.gnu.org/software/autoconf/
+[2] http://www.gnu.org/software/automake/
+
+-- 
+Daniel Posch
+Brainfuck Studio Project Leader
+danpo at users.berlios.de
+
+

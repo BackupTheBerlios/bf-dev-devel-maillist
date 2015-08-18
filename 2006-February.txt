@@ -1,0 +1,555 @@
+From d.posch at inode.at  Sun Feb  5 00:34:49 2006
+From: d.posch at inode.at (Daniel Posch)
+Date: Sun, 05 Feb 2006 00:34:49 +0100
+Subject: [Bf-dev-devel] Programmierer unter Linux
+Message-ID: <43E53A19.5000509@inode.at>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Alle von euch, die unter Linux programmieren k?nnen das KDevelop 3.3
+Projekt verwenden, dass im SVN-Repository zu finden ist.
+
+Ich bitte euch zu beachten, dass der Code der bis jetzt vorhanden ist,
+KEIN Qt 4, sondern Qt 3 Code ist und somit nicht f?r Brainfuck Studio
+einsetzbar. Allerdings ist das ein ganz sch?ner Beispielcode f?r einen
+einfachen Editor, weswegen ich ihn nicht gel?scht habe. Ich denke, dass
+wir das Programm eventuell auf Qt 4 portieren k?nnen (da wir das
+Qt-Designer File zur Verf?gung haben). Das w?re eine gro?e Hilfe!
+
+Was sagt ihr?
+
+- --
+Daniel Posch
+Brainfuck Studio Project Leader
+d.posch at inode.at
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.2 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+
+iD8DBQFD5ToZJUJZxetoOPARAo2bAKCSSXyOivd6/x/hr7wjYC/f/od6IgCfSey/
+4cRzSuZxpp9uR38K/mEhItY=
+=7P+S
+-----END PGP SIGNATURE-----
+
+
+From d.posch at inode.at  Sun Feb  5 00:49:05 2006
+From: d.posch at inode.at (Daniel Posch)
+Date: Sun, 05 Feb 2006 00:49:05 +0100
+Subject: [Bf-dev-devel] Stufenplan
+Message-ID: <43E53D71.9060206@inode.at>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Ich habe einen Stufenplan erstellt, der im SVN-Repository unter
+
+/trunk/docs/stufenplan.odt
+
+einsehbar ist.
+
+Bitte seht bis Sonntag abend mal dr?ber und sagt mir eure
+Meinungen/Verbesserungsvorschl?ge.
+
+Insbesondere f?r die erste Stufe ist wichtig, da wir diese innerhalb des
+Zeitrahmens und des Unterrichts abwickeln m?ssen und daher unsere Note
+davon abh?ngt. Die weiteren Stufen sind im Moment noch wenig zu
+beachten, ob ihr sp?ter dabei mitmacht oder nicht bleibt dann euch
+?berlassen.
+
+- --
+Daniel Posch
+Brainfuck Studio Project Leader
+danpo at users.berlios.de
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.2 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+
+iD8DBQFD5T1xJUJZxetoOPARAlgqAKCRSAlBVGkrRvXE6LWY0qJYwGfv1ACfSaFD
+TTa7KcR9T1aRP7wo2VFlOa0=
+=Ce1t
+-----END PGP SIGNATURE-----
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: pgpkeys.asc
+Type: application/pgp-keys
+Size: 1678 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/bf-dev-devel/attachments/20060205/c71cba2c/attachment.key>
+
+From d.posch at inode.at  Sun Feb  5 03:23:16 2006
+From: d.posch at inode.at (Daniel Posch)
+Date: Sun, 05 Feb 2006 03:23:16 +0100
+Subject: [Bf-dev-devel] Programmierer unter Linux
+In-Reply-To: <43E53A19.5000509@inode.at>
+References: <43E53A19.5000509@inode.at>
+Message-ID: <43E56194.5040001@inode.at>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Daniel Posch wrote:
+> Alle von euch, die unter Linux programmieren k?nnen das KDevelop 3.3
+> Projekt verwenden, dass im SVN-Repository zu finden ist.
+> 
+> Ich bitte euch zu beachten, dass der Code der bis jetzt vorhanden ist,
+> KEIN Qt 4, sondern Qt 3 Code ist und somit nicht f?r Brainfuck Studio
+> einsetzbar. Allerdings ist das ein ganz sch?ner Beispielcode f?r einen
+> einfachen Editor, weswegen ich ihn nicht gel?scht habe. Ich denke, dass
+> wir das Programm eventuell auf Qt 4 portieren k?nnen (da wir das
+> Qt-Designer File zur Verf?gung haben). Das w?re eine gro?e Hilfe!
+> 
+> Was sagt ihr?
+> 
+
+Ich habe das Projekt soeben wieder entfernt, da es Probleme mit
+KDevelop's Anwendung von QMake gibt. Es vermischt die Versionen, d.h.
+beim Compilieren gibt's ein hin und her zwischen QMake 3.3 und QMake 4.1
+ wodurch die Erstellung des Programmes nat?rlich fehlschl?gt.
+
+Ich werde mich mit dieser Problematik in den n?chsten Tagen
+auseiandersetzen und euch bei Interesse ?ber die Ergebnisse informieren.
+
+Desweiteren habe ich den Code ebenfalls wieder gel?scht, weil es doch
+vollkommen sinnlos ist. Ein viel besseres Beispiel, sogar f?r MDI,
+findet ihr in der Qt 4 Dokumentation[1], wo man sieht, dass die
+Oberfl?che gar kein so gro?es und kompliziertes Programm ist. (Die
+vielleicht auftretende Problematik der visuellen Integration des
+Debuggers mal ausgenommen). Es w?re vielleicht sogar sinnvoll sich an
+diesen Code zu halten und f?r's erste keine Tabs zu verwenden
+(haupts?chlich weil ich keinen bzw. nur einen sehr schlechten Plan habe,
+wie das realisierbar w?re).
+
+[1] http://doc.trolltech.com/4.1/mainwindows-mdi.html
+
+- --
+Daniel Posch
+Brainfuck Studio Project Leader
+d.posch at inode.at
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.2 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+
+iD8DBQFD5WGUJUJZxetoOPARApzjAJ4mkQgG1SoQYz7Lgm5SQaC5Hezt6gCfclOC
+3ELFgrc2j5W0Vt5DUxDjGyo=
+=FLrL
+-----END PGP SIGNATURE-----
+
+
+From d.posch at inode.at  Sun Feb  5 03:31:47 2006
+From: d.posch at inode.at (Daniel Posch)
+Date: Sun, 05 Feb 2006 03:31:47 +0100
+Subject: [Bf-dev-devel] User Interface
+Message-ID: <43E56393.6080504@inode.at>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Im SVN-Repository finden sich zwei User Interface-Dateien
+
+/trunk/src/mainwindow.ui
+/trunk/src/settings.ui
+
+die ich erzeugt habe, wobei "mainwindow.ui" unser Hauptfenster und
+"settings.ui" unser Dialog f?r Konfigurationen ist. Ich habe bereits mit
+dem Design angefangen, allerdings ist noch nicht sehr viel da.
+
+Ich bitte euch die Interfaces nach eurem eigenen Ermessen
+weiterzuentwickeln, denn den Aufwand der damit verbunden kann ich
+alleine nicht meistern. Ich werde selber daran arbeiten und eventuell
+eure Entwicklungen etwas ab?ndern, sofern notwendig.
+
+Ich hoffe wir kommen mit dieser radikalen Methode zurecht... F?r
+Vorschl?ge und konstruktive Kritik bin ich wie immer offen.
+
+- --
+Daniel Posch
+Brainfuck Studio Project Leader
+d.posch at inode.at
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.2 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+
+iD8DBQFD5WOSJUJZxetoOPARAlFfAJoD6UrcvASU5raZEhA9w4gFCZ5XjwCfQBj0
+b8QJv84+E6SvMpEBipyDeh4=
+=LHkU
+-----END PGP SIGNATURE-----
+
+
+From d.posch at inode.at  Sun Feb  5 13:25:33 2006
+From: d.posch at inode.at (Daniel Posch)
+Date: Sun, 05 Feb 2006 13:25:33 +0100
+Subject: [Bf-dev-devel] BSD-Lizenz nicht brauchbar
+Message-ID: <43E5EEBD.20807@inode.at>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Bei der BSD-Lizenz[1] ist ein Programmierer, der ein unter einer
+BSD-Lizenz ver?ffentlichtes Programm ver?ndert, nicht verpflichtet, den
+Quellcode seines ver?nderten Programms zu ver?ffentlichen. Einzige
+Bedingung der BSD-Lizenz ist, dass der Copyright-Vermerk des
+urspr?nglichen Programms nicht entfernt werden darf. Somit eignet sich
+unter der BSD-Lizenz stehende Software auch gut als Vorlage f?r
+kommerzielle (teil-propriet?re) Produkte.
+
+Allerdings hei?t es bei Trolltech w?rtlich[2]:
+> Dual Licensing is based on the principle of Quid Pro Quo - something
+> for something.
+>
+> This is how it works: In return for the advantages you realize from
+> using a Trolltech product to create your application, we require that
+> you do one of the following:
+>
+> Either: Contribute to the continued development of the product by
+> purchasing commercial licenses from Trolltech. This option secures you
+> the right to distribute your application under the license terms of
+> your choice.
+>
+> Or: Contribute to the Open Source community by placing your
+> application under an Open Source license (e.g. the GPL). This option
+> secures all users the rights to obtain the application's full source
+> code, modify it, and redistribute it.
+>
+> By offering both open source and commercial licenses, Trolltech has
+> been able to grow and thrive over the past ten years.
+
+Die BSD-Lizenz gew?hrleistet die Forderungen nicht, sondern stellt sie
+dem User nur frei. Ich schlage deshalb vor, unser eigenes Lizenzmodell
+zu ?ndern, um den Bedingungen 100%ig nachzukommen.
+
+Zu erw?gen w?ren vor allem die GNU Public License (GPL)[3] und die Q
+Public License (QPL)[4].
+
+Ich bitte um eure Meinungen!
+
+[1] http://de.wikipedia.org/wiki/BSD-Lizenz
+[2] http://www.trolltech.com/company/model.html
+[3] http://de.wikipedia.org/wiki/GNU_General_Public_License
+[4] http://de.wikipedia.org/wiki/QPL
+
+- --
+Daniel Posch
+Brainfuck Studio Project Leader
+d.posch at inode.at
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.2 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+
+iD8DBQFD5e68JUJZxetoOPARArwBAJ42vCx4X5usLhBU8PaSVt6QmvcJogCeP7mj
+xQo7LfvAYPT8Y78WFo0z7pI=
+=yEnr
+-----END PGP SIGNATURE-----
+
+
+From d.posch at inode.at  Sun Feb  5 15:14:39 2006
+From: d.posch at inode.at (Daniel Posch)
+Date: Sun, 05 Feb 2006 15:14:39 +0100
+Subject: [Bf-dev-devel] BSD-Lizenz nicht brauchbar
+In-Reply-To: <43E5EEBD.20807@inode.at>
+References: <43E5EEBD.20807@inode.at>
+Message-ID: <43E6084F.9070300@inode.at>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Daniel Posch wrote:
+> Bei der BSD-Lizenz[1] ist ein Programmierer, der ein unter einer
+> BSD-Lizenz ver?ffentlichtes Programm ver?ndert, nicht verpflichtet, den
+> Quellcode seines ver?nderten Programms zu ver?ffentlichen. Einzige
+> Bedingung der BSD-Lizenz ist, dass der Copyright-Vermerk des
+> urspr?nglichen Programms nicht entfernt werden darf. Somit eignet sich
+> unter der BSD-Lizenz stehende Software auch gut als Vorlage f?r
+> kommerzielle (teil-propriet?re) Produkte.
+> 
+> Allerdings hei?t es bei Trolltech w?rtlich[2]:
+>>> Dual Licensing is based on the principle of Quid Pro Quo - something
+>>> for something.
+>>>
+>>> This is how it works: In return for the advantages you realize from
+>>> using a Trolltech product to create your application, we require that
+>>> you do one of the following:
+>>>
+>>> Either: Contribute to the continued development of the product by
+>>> purchasing commercial licenses from Trolltech. This option secures you
+>>> the right to distribute your application under the license terms of
+>>> your choice.
+>>>
+>>> Or: Contribute to the Open Source community by placing your
+>>> application under an Open Source license (e.g. the GPL). This option
+>>> secures all users the rights to obtain the application's full source
+>>> code, modify it, and redistribute it.
+>>>
+>>> By offering both open source and commercial licenses, Trolltech has
+>>> been able to grow and thrive over the past ten years.
+> 
+> Die BSD-Lizenz gew?hrleistet die Forderungen nicht, sondern stellt sie
+> dem User nur frei. Ich schlage deshalb vor, unser eigenes Lizenzmodell
+> zu ?ndern, um den Bedingungen 100%ig nachzukommen.
+> 
+> Zu erw?gen w?ren vor allem die GNU Public License (GPL)[3] und die Q
+> Public License (QPL)[4].
+> 
+> Ich bitte um eure Meinungen!
+> 
+> [1] http://de.wikipedia.org/wiki/BSD-Lizenz
+> [2] http://www.trolltech.com/company/model.html
+> [3] http://de.wikipedia.org/wiki/GNU_General_Public_License
+> [4] http://de.wikipedia.org/wiki/QPL
+> 
+> --
+> Daniel Posch
+> Brainfuck Studio Project Leader
+> d.posch at inode.at
+
+Ich habe vorerst alle Lizenzangaben ge?ndert und den (noch nicht
+vorhandenen) Programmcode unter der GNU Public License lizenziert.
+Desweiteren habe ich den dementsprechenden Absatz im Feinkonzept
+ge?ndert und den Originaltext hinzugef?gt. F?r Diskussionen bez?glich
+einer anderen Lizenz bin ich nach wie vor offen.
+
+- --
+Daniel Posch
+Brainfuck Studio Project Leader
+d.posch at inode.at
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.2 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+
+iD8DBQFD5ghOJUJZxetoOPARAqf2AJ9nmes9fysM31ST1HR+3OaisEWChgCfa7Kk
+ON3Kh63WHfUM1HMixCiPyyY=
+=16z2
+-----END PGP SIGNATURE-----
+
+
+From d.posch at inode.at  Sun Feb  5 15:23:57 2006
+From: d.posch at inode.at (Daniel Posch)
+Date: Sun, 05 Feb 2006 15:23:57 +0100
+Subject: [Bf-dev-devel] Feinkonzept
+Message-ID: <43E60A7D.6000009@inode.at>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Das Feinkonzept ist nun in einer ersten Version punkto Aufgliederung im
+SVN-Repository unter
+
+/trunk/docs/feinkonzept.odt
+
+auffindbar. Ich bitte euch darum, kontinuierlich daran weiter zu arbeiten.
+
+Danke!!
+
+- --
+Daniel Posch
+Brainfuck Studio Project Leader
+d.posch at inode.at
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.2 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+
+iD8DBQFD5gp9JUJZxetoOPARAgC5AJ4nusFC0MdAC1dmJM1zfqYDd/W9fQCeNeRH
+BMTFdsq/f8cgiQQm05EDR+Y=
+=ns+h
+-----END PGP SIGNATURE-----
+
+
+From d.posch at inode.at  Wed Feb  8 19:30:08 2006
+From: d.posch at inode.at (Daniel Posch)
+Date: Wed, 08 Feb 2006 19:30:08 +0100
+Subject: [Bf-dev-devel] Teamsitzung am Freitag, 10. Februar 2006
+Message-ID: <43EA38B0.3030701@inode.at>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Ich m?chte hiermit noch einmal alle daran erinnern, dass wie von mir
+vorgeschlagen und von euch zugesagt, am
+
+Freitag, dem 10. Februar 2006
+
+eine Teamsitzung abgehalten wird in dem wir die wichtigsten Punkte im
+Feinkonzept durchgehen werden. Wie lange die Sitzung dauert, ist noch
+fraglich. Damit nicht alles im ungewissen bleibt, folgen nun die
+Inhaltspunkte (soweit ich mir das bis jetzt vorgestellt habe):
+
+
+  1. "Definition des Feinkonzepts"; Inhalt und Layout
+
+  2. Absch?tzung des Aufwands: eventuelle Absprache mit Prof. Mundigler
+bzgl. Terminverschiebung einzelner Teile (UML-Diagramm??)
+
+  3. Einengung der Rollen und Zust?ndigkeitsbereich der Mitglieder im
+Projekt
+
+  4. Aufgabenzuteilung: Wer macht was im Feinkonzept?
+
+  5. Beginn der gemeinschaftlichen Arbeit am Feinkonzept (wenn noch Zeit
+vorhanden ist)
+
+
+Ich w?rde vorschlagen, dass wir diese Sitzung kurz und schmerzlos hinter
+uns bringen und nicht nach der 5. Unterrichtseinheit wieder mal eine
+Stunde beim Spar verschei?en. Das k?nnen wir anschlie?end am Bahnhof
+auch machen.
+
+Ich hoffe, dass wir diesmal in der Lage sind, unsere Aufgaben schnell
+und pr?zise zu erledigen. Eine Situation wie beim Grobkonzept ist
+inakzeptabel. Wir m?ssen aus unseren Fehlern lernen.
+
+- --
+Daniel Posch
+Brainfuck Studio Project Leader
+d.posch at inode.at
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.2 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+
+iD8DBQFD6jiwJUJZxetoOPARAiU+AJ4/szBZtZWMBy88S3PRsmVt6zWXDwCeNkgs
+UPa3j+7HU96v/xB1cdMjqh8=
+=Opna
+-----END PGP SIGNATURE-----
+
+
+From d.posch at inode.at  Thu Feb  9 16:31:37 2006
+From: d.posch at inode.at (Daniel Posch)
+Date: Thu, 09 Feb 2006 16:31:37 +0100
+Subject: [Bf-dev-devel] Feinkonzept
+In-Reply-To: <43E60A7D.6000009@inode.at>
+References: <43E60A7D.6000009@inode.at>
+Message-ID: <43EB6059.8090304@inode.at>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Thema Qt:
+
+Ich bitte euch -- trotzdem, dass ihr heute relativ sp?t aushabt -- bis
+morgen die beste Strategie f?r das Layout des Mainwindows herauszufinden.
+
+Ich kann mich nicht erinnern euch bereits meine Vorstellungen mitgeteilt
+zu haben, also mache ich das jetzt (es wird wahrscheinlich ohnehin nicht
+viel neues f?r euch dabei sein):
+
+ - Oben befindet sich das Men? und die Men?leiste
+ - Links befindet sich die Tabelle (oder ev. eine andere Komponente) f?r
+den Debugger
+ - Unten befindet sich eine Leiste f?r den Compiler-Output; darunter ist
+eine Statusleiste
+ - Die restliche Fl?che (sprich: der Raum im rechten Bereich) wird f?r
+die Textarea ben?tzt, in der der Brainfuck-Code editiert wird
+
+Das Problem ist nicht die Anordnung der Elemente, sondern was passiert,
+wenn die Fenstergr??e ver?ndert wird. (Wir wollen nicht, dass die
+Komponenten immer gleich gro? bleiben.) Es w?re von Vorteil, wenn wir
+morgen wissen, wie man darauf reagieren kann, ob Layouts daf?r
+erforderlich sind und wenn ja, welches Layout vermutlich das
+geschickteste ist.
+
+F?hlt euch bitte nicht unangesprochen!! Der erste der das liest,
+schreibt eine Antwort auf diese Mail an die Liste und ?bernimmt die
+Aufgabe bitte!
+
+Der Aufwand daf?r ist nicht sehr hoch, aber ich selber befinde mich
+leider im Lernstress.
+
+Danke im voraus!
+
+- --
+Daniel Posch
+Brainfuck Studio Project Leader
+d.posch at inode.at
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.2 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+
+iD8DBQFD62BZJUJZxetoOPARAhLPAKCAKFpIfAMvr1FpTPcX4qTKB2sY+wCfYT3x
+ojd5smVXsaKy54rdjrkOxz4=
+=G4ww
+-----END PGP SIGNATURE-----
+
+
+From d.posch at inode.at  Tue Feb 28 19:46:40 2006
+From: d.posch at inode.at (Daniel Posch)
+Date: Tue, 28 Feb 2006 19:46:40 +0100
+Subject: [Bf-dev-devel] Feinkonzept
+In-Reply-To: <43EB6059.8090304@inode.at>
+References: <43E60A7D.6000009@inode.at> <43EB6059.8090304@inode.at>
+Message-ID: <44049A90.4040805@inode.at>
+
+Hallo!
+
+Nach euren Anregungen habe ich heute einen Schritt in die Richtung
+gesetzt, euch genauere Arbeitsanweisungen zu geben. Mir war bis jetzt
+nicht bewusst, dass das in einer so engen Form notwendig ist. Ich werde
+das bis zum Projektende beenden und bitte euch darum, mich auf meine
+Fehler aufmerksam zu machen, so dass ich daraus lernen kann.
+
+Gleichzeitig erwarte ich mir aber auch von euch ein gewisses
+entgegenkommen und Engagement. Ich will, dass ihr zu 100% hinter dem
+Projekt steht. Das hei?t nat?rlich nicht, dass ihr Tag und Nacht daran
+arbeiten m?sst. Aber wenn eine Aufgabe zu erledigen ist, dann m?chte
+ich, dass ihr das auch wahrnehmt und euer bestm?glichstes tut um sie zu
+erledigen! Ein Projekt basiert auf Zusammenarbeit und nur durch
+Zusammenarbeit kommen wir auch weiter. Wir m?ssen aufh?ren gegenseitig
+abzuw?gen, wer wie viel beitr?gt und die Arbeit zu verweigern, weil
+jemand anderes auch nicht gearbeitet hat. Es ist nicht so wichtig wie
+viel ein anderer zum Projekt beitr?gt sondern wie viel ihr selber
+beitr?gt. Manchmal muss man eben in den sauren Apfel bei?en, aber ihr
+m?sst euch dessen bewusst sein, dass das kein Dauerzustand ist! Und vor
+allem erwarte ich mir von euch kreativ und kritisch zu denken. Ich stehe
+euch zwar gerne f?r Fragen zur Verf?gung, aber ich kann euch das denken
+nicht abnehmen.
+
+Ich m?chte euch jetzt die Ergebnisse f?r das Feinkonzept vorstellen, das
+wir am 9. M?rz abgeben m?ssen. Beachtet bitte, dass es eine neue
+Revision im SVN-Repository gibt (Nummer 36): Updaten nicht vergessen!
+
+(1) Zu allererst bitte ich euch darum, euch die neue
+Verantwortungsmatrix anzusehen, die Auskunft eure Rolle im Projekt gibt.
+Wenn ihr nicht zufrieden damit seid, dann lasst es micht bitte sofort
+wissen.
+
+(2) Zweitens muss ich euch darauf aufmerksam machen, dass in jeder
+?berschrift die Namen derer hinzugef?gt worden sind, die f?r das
+jeweilige Kapitel verantwortlich sind. Fertige Kapitel haben keine Namen
+als Suffix und dementsprechend sollt ihr die Namen aus der ?berschrift
+entfernen, wenn ihr mit einem Kapitel fertig seit. Die Arbeitseinteilung
+ist auf Basis von Gespr?chen und der Verantwortungsmatrix entstanden.
+
+(3) Unter den (meisten) ?berschriften sind kurze Notizen vorhanden, die
+den Sinn und Zweck des Kapitels beschreiben und auf m?gliche
+Schwierigkeiten hinweisen. Die Notizen sind erkennbar durch kursive
+Schrift innerhalb von eckigen Klammern.
+
+(4) Hiermit m?chte ich gewisse Abh?ngigkeiten klarstellen und
+Priorit?ten die sich daraus ergeben. Das UML-Klassendiagramm ist wohl
+einer der gr??ten und umfangreichsten Teile des Feinkonzepts. Der Teil
+der Benutzeroberfl?che kann aus den vom UIC (User Interface Compiler)
+generierten Klassendefinitionen erstellt werden. Dazu ist es notwendig
+die _Oberfl?che fertig zu designen_ (!!). Die Entwicklungswerkzeuge
+h?ngen im Moment von den _Pl?nen ab, an denen David Christa t?fftelt_
+(!!). Erst wenn das Verhalten klargestellt ist, kann auch ein
+Klassendiagramm erstellt werden. Das sind die zwei wichtigsten
+Grundlagen f?r das Klassendiagramm, um das ich mich k?mmern werde. (Nur
+zur Anmerkung: bis die Aufgaben erledigt sind, arbeite ich anderswo weiter.)
+
+(5) Zuletzt weise ich euch nochmal darauf hin, dass Kapiteln in deren
+?berschriften nicht euer Name steht, nicht komplett uninteressant
+sind... Es ist jeder dazu eingeladen, bei schwierigen Stellen
+weiterzuhelfen.
+
+Ich erwarte mir von den Teammitgliedern, die zusammen an einem Abschnitt
+arbeiten, sich in einem gewissen grad selber eine Teilung auszumachen.
+
+Sollten Fragen auftauchen, dann scheut euch nicht mich zu fragen! (Am
+besten ihr schickt eine Mail an die Liste und haltet die Kommunikation
+aufrecht.)
+
+---
+Daniel Posch
+Brainfuck Studio Project Leader
+d.posch at inode.at
+
+
+

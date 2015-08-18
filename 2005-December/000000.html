@@ -1,0 +1,185 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Bf-dev-devel] EN ISO 9241 - 10
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/bf-dev-devel/2005-December/index.html" >
+   <LINK REL="made" HREF="mailto:bf-dev-devel%40lists.berlios.de?Subject=Re%3A%20%5BBf-dev-devel%5D%20EN%20ISO%209241%20-%2010&In-Reply-To=%3C4394B857.8020006%40inode.at%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   <LINK REL="Next"  HREF="000001.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Bf-dev-devel] EN ISO 9241 - 10</H1>
+    <B>Daniel Posch</B> 
+    <A HREF="mailto:bf-dev-devel%40lists.berlios.de?Subject=Re%3A%20%5BBf-dev-devel%5D%20EN%20ISO%209241%20-%2010&In-Reply-To=%3C4394B857.8020006%40inode.at%3E"
+       TITLE="[Bf-dev-devel] EN ISO 9241 - 10">d.posch at inode.at
+       </A><BR>
+    <I>Mon Dec  5 22:59:51 CET 2005</I>
+    <P><UL>
+        
+        <LI>Next message: <A HREF="000001.html">[Bf-dev-devel] EN ISO 9241 - 10
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#0">[ date ]</a>
+              <a href="thread.html#0">[ thread ]</a>
+              <a href="subject.html#0">[ subject ]</a>
+              <a href="author.html#0">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Guten Abend!
+
+Obwohl dies zugegebenerma&#223;en kein sehr einladender Titel ist, ist das 
+Thema das sich dahinter verbirgt hoch interessant und wichtig! Es geht 
+um die Norm EN ISO 9241, in der Kriterien f&#252;r das Design ergonomischer 
+Benutzerschnittstellen definiert sind.
+
+Die erste berechtigte Frage die sich der ein oder andere hier eventuell 
+stellt, ist der Nutzen der Einhaltung dieser Norm. Nun, die EN ISO 9241 
+ist eine so genannte Human Interface Guideline. Eine Human Interface 
+Guideline (HIG, engl. f&#252;r &quot;Richtlinie f&#252;r Benutzerschnittstellen&quot;) 
+definiert die Schnittstelle zwischen Mensch und Computer, wobei meistens 
+die Richtlinien der Software-Ergonomie (Stichwort: &quot;Usability&quot;) 
+ber&#252;cksichtigt werden. Die bekannteste Human Interface Guideline ist 
+wahrscheinliche jene von Apple [1], allerdings sind solche Richtlinien 
+unter anderem auch von IBM, GNOME [2], KDE [3] und Java [4] bekannt. 
+Beim Brainfuck Studio Project konzentrieren wir uns haupts&#228;chlich auf 
+die von ISO definierte Norm. Wenn wir beim Design der GUI auch Elemente 
+anderer HIGs einflie&#223;en lassen, w&#252;rde ich sagen, k&#246;nnen wir davon nur 
+profitieren. Wichtig ist aber, Schritt f&#252;r Schritt an das Problem 
+heranzugehen. Darum m&#246;chte ich in dieser Mail erst einmal die 
+Grundprinzipien der EN ISO 9241 erkl&#228;ren, nach deren Vorbild wir, wie 
+bereits in unserem Pflichtenheft festgelegt, den GUI-Teil unserer IDE 
+gestalten wollen.
+
+Sie besteht insgesamt aus 17 Teilen:
+
+     Teil 1: Allgemeine Einf&#252;hrung
+     Teil 2: Anforderungen an die Arbeitsaufgaben - Leits&#228;tze
+     Teil 3: Anforderungen an visuelle Anzeigen
+     Teil 4: Anforderungen an Tastaturen
+     Teil 5: Anforderungen an die Arbeitsplatzgestaltung und K&#246;rperhaltung
+     Teil 6: Anforderungen an die Arbeitsumgebung
+     Teil 7: Anforderungen an visuelle Anzeigen bez&#252;glich Reflexionen
+     Teil 8: Anforderungen an Farbdarstellungen
+     Teil 9: Anforderungen an Eingabeger&#228;te au&#223;er Tastaturen
+     Teil 10: Grunds&#228;tze der Dialoggestaltung
+     Teil 11: Anforderungen an die Gebrauchstauglichkeit - Leits&#228;tze
+     Teil 12: Informationsdarstellung
+     Teil 13: Benutzerf&#252;hrung
+     Teil 14: Dialogf&#252;hrung mittels Men&#252;s
+     Teil 15: Dialogf&#252;hrung mittels Kommandosprachen
+     Teil 16: Dialogf&#252;hrung mittels direkter Manipulation
+     Teil 17: Dialogf&#252;hrung mittels Bildschirmformularen
+
+Besonders interessant ist wohl Teil 10, Grunds&#228;tze der Dialoggestaltung, 
+auf der die direkte Interaktion mit dem Benutzer festgehalten wird.
+
+Die EN ISO 9241 - 10: Grunds&#228;tze der Dialoggestaltung
+
+1. Einfach und direkt zum Ziel: Aufgabenangemessenheit
+
+&quot;Ein Dialog ist aufgabenangemessen, wenn er den Benutzer unterst&#252;tzt, 
+seine Arbeitsaufgbe effektiv und effizient zu erledigen.&quot;
+
+
+2. Wenn Intuition ausreicht: Selbstbeschreibungsf&#228;higkeit
+
+&quot;Ein Dialog ist selbstbeschreibungsf&#228;hig, wenn jeder einzelne 
+Dialogschritt durch R&#252;ckmeldung des Dialogsystems unmittelbar 
+verst&#228;ndlich ist oder dem Benutzer auf Anfrage erkl&#228;rt wird.&quot;
+
+
+3. Wenn alles unter Kontrolle ist: Steuerbarkeit
+
+&quot;Ein Dialog ist steuerbar, wenn der Benutzer in der Lage ist, den 
+Dialogablauf zu starten sowie seine Richtung und Geschwindigkeit zu 
+beeinflussen, bis das Ziel erreicht ist.&quot;
+
+
+4. Wenn es zur Gewohnheit wird: Erwartungskonformit&#228;t
+
+&quot;Ein Dialog ist erwartungskonform, wenn er konsistent ist und den 
+Merkmalen des Benutzers entspricht, z.B. seinen Kenntnissen aus dem 
+Arbeitsgebiet, seiner Ausbildung und seiner Erfahrung sowie den 
+allgemein anerkannten Konventionen.&quot;
+
+
+5. Wenn unliebsame &#220;berraschungen ausbleiben: Fehlertoleranz
+
+&quot;Ein Dialog ist fehlertolerant, wenn das beabsichtigte Arbeitsergebnis 
+trotz erkennbar fehlerhafter Eingaben entweder mit keinem oder mit 
+minimalem Korrekturaufwand seitens des Benutzers erreicht werden kann.&#8220;
+
+
+6. Wenn jeder arbeitet, wie es ihm beliebt: Individualisierbarkeit
+
+&quot;Ein Dialog ist individualisierbar, wenn das Dialogsystem Anpassungen an 
+die Erfordernisse der Arbeitsaufgabe sowie an die individuellen 
+F&#228;higkeiten und Vorlieben des Benutzers zul&#228;&#223;t.&quot;
+
+
+7. Wenn man schlauer wird:  Lernf&#246;rderlichkeit
+
+&quot;Ein Dialog ist lernf&#246;rderlich, wenn er den Benutzer beim Erlernen des 
+Dialogsystems unterst&#252;tzt und anleitet.&quot;
+
+
+Die Prinzipien sind wirklich keine Geheimwissenschaft und relativ 
+&#252;berschaulich noch dazu. Das Problem bei derartigen Normen ist, dass sie 
+nicht frei einsehbar sind. Man muss sie kaufen und das geht ordentlich 
+ins Geld. Die EN ISO 9241 - 10 ist mit ca. 40 &#8364; noch relativ billig. 
+Kauft man sich gesamte Norm, streift man schon in Richtung der 1000 &#8364; 
+Marke. Das ist gegen&#252;ber Standards wie den Apple HIGs ein entscheidender 
+Nachteil.
+
+Fazit:
+Ich pers&#246;nliche denke, dass wir einstweilen sehr gut beraten sind, wenn 
+wir nur die 7 Grunds&#228;tze der EN ISO 9241 - 10 einhalten. Alle weiteren 
+Anforderungen die ich dann im Grobkonzept verankere bedeuten ein h&#246;heren 
+Aufwand f&#252;r jeden von uns, der sich (noch) nicht lohnt.
+
+Was ist eure Meinung dazu?
+
+
+[1] 
+<A HREF="http://developer.apple.com/documentation/UserExperience/Conceptual/OSXHIGuidelines/">http://developer.apple.com/documentation/UserExperience/Conceptual/OSXHIGuidelines/</A>
+[2] <A HREF="http://developer.gnome.org/projects/gup/hig/">http://developer.gnome.org/projects/gup/hig/</A>
+[3] 
+<A HREF="http://developer.kde.org/documentation/standards/kde/style/basics/index.html">http://developer.kde.org/documentation/standards/kde/style/basics/index.html</A>
+[4] <A HREF="http://java.sun.com/products/jlf/ed2/book/index.html">http://java.sun.com/products/jlf/ed2/book/index.html</A>
+
+-- 
+Daniel Posch
+Brainfuck Studio Project Leader
+<A HREF="https://lists.berlios.de/mailman/listinfo/bf-dev-devel">danpo at users.berlios.de</A>
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	<LI>Next message: <A HREF="000001.html">[Bf-dev-devel] EN ISO 9241 - 10
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#0">[ date ]</a>
+              <a href="thread.html#0">[ thread ]</a>
+              <a href="subject.html#0">[ subject ]</a>
+              <a href="author.html#0">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/bf-dev-devel">More information about the Bf-dev-devel
+mailing list</a><br>
+</body></html>

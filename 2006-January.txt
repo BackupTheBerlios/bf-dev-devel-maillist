@@ -1,0 +1,115 @@
+From boern at gmx.at  Wed Jan  4 19:29:52 2006
+From: boern at gmx.at (Bernhard Kragl)
+Date: Wed, 04 Jan 2006 19:29:52 +0100
+Subject: [Bf-dev-devel] Vom Qt-Designer zum C++-Programm
+In-Reply-To: <43B0359A.9080006@inode.at>
+References: <43ADD63C.5090609@gmx.at> <43B0359A.9080006@inode.at>
+Message-ID: <43BC1420.9040407@gmx.at>
+
+Daniel Posch wrote:
+
+> Ich nehme mal an, dass der Designer bzw. der Compiler das 
+> Implementieren nicht ?bernimmt. Wie sieht's denn mit Signal/Slots etc. 
+> aus - wird das ordnungsgem?? beachtet?
+
+Normalerweise m?sste der uic auch das Implementieren ?bernehmen.
+Weilt was mich jetzt aber schon zeimlich anfickt, de schei?e zwischen 
+Qt3 und Qt4. Bei mir hod es beides Installiert. Don hob i 3 uic: uic, 
+uic3, uic-qt4.
+Don is jede schei? beschreibung im net f?r Qt3.
+
+Oba jetzt zum Implementieren.
+Des unten is de man-Page vom uic-qt4. Do gibts a eigene Option -impl. Do 
+hob i a im net geschaud wie des andere mochn, nur irgendwie funktioniert 
+des bei mir ned.
+
+NAME
+       uic - Qt user interface compiler
+
+SYNOPSIS
+       uic [options] file
+
+DESCRIPTION
+       This page documents the User Interface Compiler for the Qt GUI toolkit.
+       The uic reads a user interface definition (.ui) file in XML  as  gener-
+       ated  by  Qt  Designer  and  creates corresponding C++ header or source
+       files. It also generates an image file that embeds raw  image  data  in
+       C++ source code.
+
+
+       Generate declaration:
+            uic  [options]  <file>
+
+       Generate implementation:
+            uic  [options] -impl <headerfile> <file>
+               <headerfile>:    name of the declaration file
+
+       Generate image collection:
+            uic  [options] -embed <project> <image1> <image2> <image3> ...
+               <project>:       project name
+               <image[1..n]>:   image files
+
+
+       For  convenience,  uic  can also generate declaration or implementation
+       stubs for subclasses.
+
+       Generate subclass declaration:
+            uic   [options]  -subdecl   <subclassname>   <baseclassheaderfile>
+       <file>
+               <subclassname>:     name of the subclass to generate
+               <baseclassheaderfile>:    declaration file of the baseclass
+
+       Generate subclass implementation:
+            uic  [options] -subimpl <subclassname> <subclassheaderfile> <file>
+               <subclassname>:     name of the subclass to generate
+               <subclassheaderfile>:    declaration file of the subclass
+
+
+GENERAL OPTIONS
+       -o file
+              Write output to file rather than to stdout.
+
+       -nofwd Omit forward declarations of custom  classes  in  the  generated
+              header file. This is necessary if typedef classes are used.
+
+       -tr func
+              Use func() instead of tr() for internationalization.
+
+       -version
+              Display the version of uic and exit.
+
+
+USAGE
+       uic is almost always invoked by make(1), rather than by hand.
+
+       Here are useful makefile rules if you only use GNU make:
+
+           %.h: %.ui
+                   uic $< -o $@
+           %.cpp: %.ui
+                   uic -impl $*.h $< -o $@
+
+       If you want to write portably, you can use individual rules of the fol-
+       lowing form:
+
+           NAME.h: NAME.ui
+                   uic $< -o $@
+           NAME.cpp: NAME.ui
+                   uic -impl $*.h $< -o $@
+
+       You must also remember to add NAME.cpp to your SOURCES (substitute your
+       favorite name) variable and NAME.o to your OBJECTS variable.
+
+       (While  we  prefer  to  name our C++ source files .cpp, the uic doesn't
+       care, so you can use .C, .cc, .CC, .cxx or even .c++ if you prefer.)
+
+
+SEE ALSO
+       http://www.trolltech.com/
+
+AUTHOR
+       Trolltech AS <info at trolltech.com>
+
+
+
+

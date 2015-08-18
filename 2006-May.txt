@@ -1,0 +1,87 @@
+From davidchrista at gmx.at  Tue May  2 16:22:44 2006
+From: davidchrista at gmx.at (David Christa)
+Date: Tue, 02 May 2006 16:22:44 +0200
+Subject: [Bf-dev-devel] Programmteiltrennung
+Message-ID: <44576B34.601@gmx.at>
+
+Heil euch, Kammeraden!
+
+Die Idee, das gesamte Projekt in eine ausf?hrbare Datei zu stecken, ist 
+meiner Meinung nach Schwachsinn und erschwert die ganze Entwicklung 
+eher, als sie zu erleichtern. Von der dadurch verlorenen Erweiterbarkeit 
+und Flexibilit?t will ich gar nicht erst reden. Darum schlage ich vor, 
+den Compiler und den Interpreter in zwei seperate, von der Befehlszeile 
+aus aufrufbare Dateien auszulagern. Dieses w?re nicht schwer zu 
+verwirklichen und w?rde uns viele Vorteile bringen.
+
+In diesem Sinne, gehabt euch wohl, und fangt an zu arbeiten, ich mach's 
+auch!
+
+David Christa
+
+
+From fuzn at gmx.at  Tue May  2 21:18:44 2006
+From: fuzn at gmx.at (Wolfgang Moser)
+Date: Tue, 02 May 2006 21:18:44 +0200
+Subject: [Bf-dev-devel] Gossip
+Message-ID: <4457B094.7090605@gmx.at>
+
+Gut, dass endlich jemand den ersten Schritt gewagt hat.
+
+Die Programmteiltrennung betrifft ja grunds?tzlich nur David und Daniel.
+
+Ich f?r meinen Teil werd mich mal mit dem Bernhard zusammensetzen m?ssen 
+und ?ber die Arbeitsteilung reden.
+Danach versuche ich bzw. Bernhard soweit es geht die einzelnen 
+Programmeteile (welche grunds?tzlich nur Slots bzw Signal sind) 
+auszuprogrammieren.
+
+Auf ein baldiges,
+Wolfgang Moser
+
+
+From davidchrista at gmx.at  Fri May  5 16:18:46 2006
+From: davidchrista at gmx.at (David Christa)
+Date: Fri, 05 May 2006 16:18:46 +0200
+Subject: [Bf-dev-devel] Parser fertig
+Message-ID: <445B5EC6.8070001@gmx.at>
+
+Seid gegr??t, geehrte Teammitglieder!
+
+Ich habe eine erste funktionsf?hige Version des Parsers fertiggestellt. 
+Sie besteht aus einer Hauptklasse (Parser) und einer Klasse f?r die 
+Fehler (Error), welche jedoch auch an anderer Stelle verwendet werden 
+kann. Das ganze funktioniert dann so, dass man ein Parser-Objekt anlegt, 
+welches den Code, den man dem Konstruktor mitgibt ?berpr?ft und 
+eventuell auftretende Fehler in einem Vector speichert. Diese Fehler 
+k?nnen dann abgerufen werden.
+Leider kann ich immer noch nicht commiten, keine Ahnung warum, also kann 
+ich den Code f?r's erste nicht auf das Repository hochladen.
+
+Mit vorz?glicher Hochachtung, euer
+
+David Christa
+
+
+From fuzn at gmx.at  Sat May  6 16:36:02 2006
+From: fuzn at gmx.at (Wolfgang Moser)
+Date: Sat, 06 May 2006 16:36:02 +0200
+Subject: [Bf-dev-devel] Nun ist es soweit
+Message-ID: <445CB452.8070802@gmx.at>
+
+Ich hab jetzt beschlossen, dass ich alles daran setzen werde die GUI 
+MDI-f?hig zu machen und die vom UIC generierten header nur als Vorlage 
+zu verwenden um ein komplett neues und eigenes Programm zu codieren.
+
+Es wird sicher schwer, aber ich bin zuverl?ssig. Vorerst werde ich 
+alleine das Grundger?st schaffen, da wir uns zu zweit dabei sowieso nur 
+im Wege stehen w?rden (und Bernhard's Notebook zur Zeit auch nicht 
+funktioniert). Danach werde ich die restlichen Implementationen an das 
+Kraglm?uschen weiterleiten und mit ihm den Rest fertigcoden.
+
+Ich hoffe sehr, dass uns das gelingen wird.
+
+So long,
+Wolfgang M.
+
+
